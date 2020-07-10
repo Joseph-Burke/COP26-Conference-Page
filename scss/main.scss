@@ -1,4 +1,30 @@
-p {
-    color: red;
+// BOOTSTRAP
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+    --primary: yellow;
 }
 
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+@mixin standard-text {
+    color: var(--primary);
+    font-family: $font-stack;
+    font-weight: bold;
+}
+
+body {
+    font-family: $font-stack;
+    color: $primary-color;
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--primary);
+    }
+    main {
+        h1 {
+            @include standard-text
+        }
+    }
+}
