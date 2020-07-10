@@ -1,30 +1,21 @@
-// BOOTSTRAP
+// Fonts and colours in accordance with design specification
 
+@font-face {
+    font-family: Cocogoose;
+    src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../assets/fonts/lato-regular.ttf");
+}
+
+$font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+$dark: #d3d3d3;
+$primary: #ec5242;
+$secondary: #272A31;
+
+// Import Bootstrap SCSS file
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-:root {
-    --primary: yellow;
-}
-
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-
-@mixin standard-text {
-    color: var(--primary);
-    font-family: $font-stack;
-    font-weight: bold;
-}
-
-body {
-    font-family: $font-stack;
-    color: $primary-color;
-    header {
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--primary);
-    }
-    main {
-        h1 {
-            @include standard-text
-        }
-    }
-}
