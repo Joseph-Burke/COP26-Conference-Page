@@ -19,3 +19,15 @@ $secondary: #272A31;
 // Import Bootstrap SCSS file
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
+.centered-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnership-section {
+    img {
+        width: 100px;
+    }
+}
