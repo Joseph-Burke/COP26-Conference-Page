@@ -26,17 +26,20 @@ $secondary: #272A31;
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    .centered-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-}
-
 .partnership-section {
     img {
         width: 100px;
+    }
+}
+
+.featured-speakers-section {
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            width: 50%;
+            min-width: 300px;
+            flex-grow: 1;
+        }
     }
 }
