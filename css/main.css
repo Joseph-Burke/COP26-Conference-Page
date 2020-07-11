@@ -7175,5 +7175,12 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   justify-content: center; }
 
+@media screen and (max-width: 768px) {
+  .centered-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
+
 .partnership-section img {
   width: 100px; }

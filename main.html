@@ -8,13 +8,22 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    <!-- Bootstrap JS dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
-    />
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Capstone HTML/CSS</title>
@@ -23,8 +32,15 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
@@ -41,13 +57,12 @@
           </ul>
         </div>
       </nav>
-    
     </header>
     <main>
-      <section class="d-flex centered-column">
-        <p class="display-5 align-self-start">Extra text right here</p>
-        <h1 class="align-self-start">Creative Commons Global Summit 2015</h1>
-        <p class="py-4 px-3 mx-3 border">
+      <section class="container-fluid centred-column align-items-start bg-dark">
+        <p class="display-5">"Hello! Sharing world"</p>
+        <h1>Creative Commons Global Summit 2015</h1>
+        <p class="py-4 px-3 border">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
           suscipit quam inventore necessitatibus, porro ipsam nesciunt adipisci
           quod.
@@ -58,52 +73,55 @@
         <p>@ National Museum of Korea, Art Center Nabi and more</p>
       </section>
 
-      <section class="container-flex centered-column">
+      <section class="container centered-column">
         <h3>Main Program</h3>
 
-        <div class="card flex-row align-items-center">
-          <img class="col-2 h-auto" src="assets/images/cop25.png" />
-          <h6 class="col-3 card-title">Lecture</h6>
-          <p class="col-7 card-text">
-            Listen to the speakers from various countries about the messages of
-            sharing and opening
-          </p>
-        </div>
+        <div class="centered-column flex-md-row">
 
-        <div class="card flex-row align-items-center">
-          <img class="col-2 h-auto" src="assets/images/cop25.png" />
-          <h6 class="col-3 card-title">Lecture</h6>
-          <p class="col-7 card-text">
-            Listen to the speakers from various countries about the messages of
-            sharing and opening
-          </p>
-        </div>
+          <div class="card flex-row flex-md-column align-items-center">
+            <img class="col-2 h-auto" src="assets/images/cop25.png" />
+            <h6 class="col-3 card-title">Lecture</h6>
+            <p class="col-7 card-text">
+              Listen to the speakers from various countries about the messages of
+              sharing and opening
+            </p>
+          </div>
 
-        <div class="card flex-row align-items-center">
-          <img class="col-2 h-auto" src="assets/images/cop25.png" />
-          <h6 class="col-3 card-title">Lecture</h6>
-          <p class="col-7 card-text">
-            Listen to the speakers from various countries about the messages of
-            sharing and opening
-          </p>
-        </div>
+          <div class="card flex-row flex-md-column align-items-center">
+            <img class="col-2 h-auto" src="assets/images/cop25.png" />
+            <h6 class="col-3 card-title">Lecture</h6>
+            <p class="col-7 card-text">
+              Listen to the speakers from various countries about the messages of
+              sharing and opening
+            </p>
+          </div>
 
-        <div class="card flex-row align-items-center">
-          <img class="col-2 h-auto" src="assets/images/cop25.png" />
-          <h6 class="col-3 card-title">Lecture</h6>
-          <p class="col-7 card-text">
-            Listen to the speakers from various countries about the messages of
-            sharing and opening
-          </p>
-        </div>
+          <div class="card flex-row flex-md-column align-items-center">
+            <img class="col-2 h-auto" src="assets/images/cop25.png" />
+            <h6 class="col-3 card-title">Lecture</h6>
+            <p class="col-7 card-text">
+              Listen to the speakers from various countries about the messages of
+              sharing and opening
+            </p>
+          </div>
 
-        <div class="card flex-row align-items-center">
-          <img class="col-2 h-auto" src="assets/images/cop25.png" />
-          <h6 class="col-3 card-title">Lecture</h6>
-          <p class="col-7 card-text">
-            Listen to the speakers from various countries about the messages of
-            sharing and opening
-          </p>
+          <div class="card flex-row flex-md-column align-items-center">
+            <img class="col-2 h-auto" src="assets/images/cop25.png" />
+            <h6 class="col-3 card-title">Lecture</h6>
+            <p class="col-7 card-text">
+              Listen to the speakers from various countries about the messages of
+              sharing and opening
+            </p>
+          </div>
+
+          <div class="card flex-row flex-md-column align-items-center">
+            <img class="col-2 h-auto" src="assets/images/cop25.png" />
+            <h6 class="col-3 card-title">Lecture</h6>
+            <p class="col-7 card-text">
+              Listen to the speakers from various countries about the messages of
+              sharing and opening
+            </p>
+          </div>
         </div>
 
         <button class="py-4 px-5 my-5">Join CC Global Summit</button>
@@ -128,43 +146,27 @@
         </div>
 
         <div class="card flex-row align-items-center">
-            <img class="col-4 h-auto" src="assets/images/cop25.png" />
-            <div class="card-body">
-                <h4 class="card-title">Yochai Benkler</h4>
-                <p class="card-subtitle">
-                    Berkman Professor of Entrepeneurial Legal Studies at Harvard Law
-                    School
-                </p>
-                <p class="card-text">
-                    Benkler studies commons-based peer production, and published his
-                    seminal book The Wealth of Networks in 2006.
-                </p>
-            </div>
+          <img class="col-4 h-auto" src="assets/images/cop25.png" />
+          <div class="card-body">
+            <h4 class="card-title">Yochai Benkler</h4>
+            <p class="card-subtitle">
+              Berkman Professor of Entrepeneurial Legal Studies at Harvard Law
+              School
+            </p>
+            <p class="card-text">
+              Benkler studies commons-based peer production, and published his
+              seminal book The Wealth of Networks in 2006.
+            </p>
+          </div>
         </div>
 
         <button>MORE</button>
-
       </section>
     </main>
 
-    <footer
-      class="container-flex d-flex justify-content-center flex-nowrap"
-    >
+    <footer class="container-flex d-flex justify-content-center flex-nowrap">
       <img class="col-4" src="assets/images/cop25.png" />
       <p class="col-4">2015 Creative Commons Korea.</p>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script> 
   </body>
 </html>
