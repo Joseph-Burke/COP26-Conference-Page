@@ -7177,3 +7177,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .partnership-section img {
   width: 100px; }
+
+form .tickets {
+  max-width: 100%; }
+  form .tickets table {
+    text-align: center; }
+
+form .form-check-input {
+  position: static;
+  display: block;
+  margin: 0px auto;
+  align-self: center; }

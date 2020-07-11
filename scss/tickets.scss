@@ -31,3 +31,19 @@ $secondary: #272A31;
         width: 100px;
     }
 }
+
+form {
+    .tickets {
+        max-width: 100%;
+        table {
+            text-align: center;
+        }
+    }
+    .form-check-input {
+                position: static;
+                display: block;
+                margin: 0px auto;
+                align-self: center;
+            }
+}
+
