@@ -1,42 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Capstone HTML/CSS</title>
-</head>
+  </head>
 
-<body>
-    <header>This will be the header</header>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Link
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Link
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Link
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
-        <section>This will be one of the main sections</section>
-        <section>This will be one of the main sections</section>
-        <section>This will be one of the main sections</section>
+      <section class="d-flex centered-column">
+        <p class="display-5 align-self-start">Extra text right here</p>
+        <h1 class="align-self-start">Creative Commons Global Summit 2015</h1>
+        <p class="py-4 px-3 mx-3 border">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+          suscipit quam inventore necessitatibus, porro ipsam nesciunt adipisci
+          quod.
+        </p>
+        <h2>
+          2015.10.15(THU) ~ 16(FRI)
+        </h2>
+        <p>@ National Museum of Korea, Art Center Nabi and more</p>
+      </section>
+
+      <section class="container-flex centered-column">
+        <h3>Main Program</h3>
+
+        <div class="card flex-row align-items-center">
+          <img class="col-2 h-auto" src="assets/images/cop25.png" />
+          <h6 class="col-3 card-title">Lecture</h6>
+          <p class="col-7 card-text">
+            Listen to the speakers from various countries about the messages of
+            sharing and opening
+          </p>
+        </div>
+
+        <div class="card flex-row align-items-center">
+          <img class="col-2 h-auto" src="assets/images/cop25.png" />
+          <h6 class="col-3 card-title">Lecture</h6>
+          <p class="col-7 card-text">
+            Listen to the speakers from various countries about the messages of
+            sharing and opening
+          </p>
+        </div>
+
+        <div class="card flex-row align-items-center">
+          <img class="col-2 h-auto" src="assets/images/cop25.png" />
+          <h6 class="col-3 card-title">Lecture</h6>
+          <p class="col-7 card-text">
+            Listen to the speakers from various countries about the messages of
+            sharing and opening
+          </p>
+        </div>
+
+        <div class="card flex-row align-items-center">
+          <img class="col-2 h-auto" src="assets/images/cop25.png" />
+          <h6 class="col-3 card-title">Lecture</h6>
+          <p class="col-7 card-text">
+            Listen to the speakers from various countries about the messages of
+            sharing and opening
+          </p>
+        </div>
+
+        <div class="card flex-row align-items-center">
+          <img class="col-2 h-auto" src="assets/images/cop25.png" />
+          <h6 class="col-3 card-title">Lecture</h6>
+          <p class="col-7 card-text">
+            Listen to the speakers from various countries about the messages of
+            sharing and opening
+          </p>
+        </div>
+
+        <button class="py-4 px-5 my-5">Join CC Global Summit</button>
+      </section>
+
+      <section class="centered-column">
+        <h3 class="text-center">Featured Speakers</h3>
+
+        <div class="card flex-row align-items-center">
+          <img class="col-4 h-auto" src="assets/images/cop25.png" />
+          <div class="card-body">
+            <h4 class="card-title">Yochai Benkler</h4>
+            <p class="card-subtitle">
+              Berkman Professor of Entrepeneurial Legal Studies at Harvard Law
+              School
+            </p>
+            <p class="card-text">
+              Benkler studies commons-based peer production, and published his
+              seminal book The Wealth of Networks in 2006.
+            </p>
+          </div>
+        </div>
+
+        <div class="card flex-row align-items-center">
+            <img class="col-4 h-auto" src="assets/images/cop25.png" />
+            <div class="card-body">
+                <h4 class="card-title">Yochai Benkler</h4>
+                <p class="card-subtitle">
+                    Berkman Professor of Entrepeneurial Legal Studies at Harvard Law
+                    School
+                </p>
+                <p class="card-text">
+                    Benkler studies commons-based peer production, and published his
+                    seminal book The Wealth of Networks in 2006.
+                </p>
+            </div>
+        </div>
+
+        <button>MORE</button>
+
+      </section>
     </main>
-    <footer>This will be the footer</footer>
 
-
-
-
-
-
-
-
-
-
-
-
+    <footer
+      class="container-flex row d-flex justify-content-center flex-nowrap"
+    >
+      <img class="col-4" src="assets/images/cop25.png" />
+      <p class="col-4">2015 Creative Commons Korea.</p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--     
+    <!--     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -46,6 +178,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script> -->
-</body>
-
+  </body>
 </html>
