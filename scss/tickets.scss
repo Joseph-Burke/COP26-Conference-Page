@@ -37,13 +37,27 @@ form {
         max-width: 100%;
         table {
             text-align: center;
+            border: 1px solid #333;
+            td,
+            th {
+                padding: 20px 40px;
+                }
+            }
         }
-    }
     .form-check-input {
                 position: static;
                 display: block;
                 margin: 0px auto;
                 align-self: center;
-            }
+    }
+    .lunch-section {
+        ul,
+        li {
+            padding: 0;
+        }
+        li {
+            margin: 0 2px;
+        }
+    }
 }
 
