@@ -7177,3 +7177,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .partnership-section img {
   width: 100px; }
+
+.past-conferences-section .card-grid {
+  display: flex;
+  flex-wrap: wrap; }

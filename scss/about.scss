@@ -31,3 +31,10 @@ $secondary: #272A31;
         width: 100px;
     }
 }
+
+.past-conferences-section {
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
