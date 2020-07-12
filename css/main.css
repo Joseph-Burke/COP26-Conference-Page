@@ -27,7 +27,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #ec5242;
-  --secondary: #272A31;
+  --secondary: #272a31;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -1821,8 +1821,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #272A31;
-  border-color: #272A31; }
+  background-color: #272a31;
+  border-color: #272a31; }
   .btn-secondary:hover {
     color: #fff;
     background-color: #16181c;
@@ -1834,8 +1834,8 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(71, 74, 80, 0.5); }
   .btn-secondary.disabled, .btn-secondary:disabled {
     color: #fff;
-    background-color: #272A31;
-    border-color: #272A31; }
+    background-color: #272a31;
+    border-color: #272a31; }
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
   .show > .btn-secondary.dropdown-toggle {
     color: #fff;
@@ -2023,22 +2023,22 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(236, 82, 66, 0.5); }
 
 .btn-outline-secondary {
-  color: #272A31;
-  border-color: #272A31; }
+  color: #272a31;
+  border-color: #272a31; }
   .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #272A31;
-    border-color: #272A31; }
+    background-color: #272a31;
+    border-color: #272a31; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
     box-shadow: 0 0 0 0.2rem rgba(39, 42, 49, 0.5); }
   .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-    color: #272A31;
+    color: #272a31;
     background-color: transparent; }
   .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #272A31;
-    border-color: #272A31; }
+    background-color: #272a31;
+    border-color: #272a31; }
     .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-secondary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(39, 42, 49, 0.5); }
@@ -3619,7 +3619,7 @@ input[type="button"].btn-block {
 
 .badge-secondary {
   color: #fff;
-  background-color: #272A31; }
+  background-color: #272a31; }
   a.badge-secondary:hover, a.badge-secondary:focus {
     color: #fff;
     background-color: #101215; }
@@ -4702,7 +4702,7 @@ button.bg-primary:focus {
   background-color: #e42a17 !important; }
 
 .bg-secondary {
-  background-color: #272A31 !important; }
+  background-color: #272a31 !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
@@ -4797,7 +4797,7 @@ button.bg-dark:focus {
   border-color: #ec5242 !important; }
 
 .border-secondary {
-  border-color: #272A31 !important; }
+  border-color: #272a31 !important; }
 
 .border-success {
   border-color: #28a745 !important; }
@@ -7036,7 +7036,7 @@ a.text-primary:hover, a.text-primary:focus {
   color: #cd2615 !important; }
 
 .text-secondary {
-  color: #272A31 !important; }
+  color: #272a31 !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
   color: #050506 !important; }
@@ -7170,11 +7170,14 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 :root {
-  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   --grey: #d3d3d3;
   --primary: #ec5242;
-  --secondary: #272A31; }
+  --secondary: #272a31; }
 
 html {
   font-size: 10px; }
@@ -7186,37 +7189,35 @@ html {
   justify-content: center; }
 
 .landing-section {
-  padding-left: 250px;
-  padding-top: 100px;
-  padding-bottom: 120px;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .landing-section h3 {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--primary); }
   .landing-section h1 {
     font-family: var(--Cocogoose);
-    font-size: 5.5rem;
+    font-size: 2.7rem;
     font-weight: 900;
-    width: 700px;
-    margin-top: 15px;
     color: var(--primary); }
   .landing-section .intro-box {
-    width: 600px;
-    padding: 20px;
+    padding: 15px 15px;
+    margin: 15px -3px 0px;
     border: 3px solid white;
     font-size: 1.3rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-weight: 500;
     background-color: #f8f8f8;
     color: var(--secondary); }
   .landing-section .dates {
-    margin-top: 40px;
-    font-size: 3rem;
+    margin-top: 30px;
+    font-size: 2rem;
     font-family: var(--Cocogoose);
     color: #585858; }
   .landing-section .location {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     margin-top: 10px;
     color: #585858; }
 
@@ -7230,3 +7231,38 @@ html {
     width: 50%;
     min-width: 300px;
     flex-grow: 1; }
+
+@media screen and (min-width: 768px) {
+  .landing-section {
+    padding-left: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .landing-section h3 {
+      font-weight: 300;
+      font-size: 4rem;
+      color: var(--primary); }
+    .landing-section h1 {
+      font-family: var(--Cocogoose);
+      font-size: 5.5rem;
+      font-weight: 900;
+      width: 700px;
+      margin-top: 15px;
+      color: var(--primary); }
+    .landing-section .intro-box {
+      width: 600px;
+      padding: 20px;
+      border: 3px solid white;
+      font-size: 1.3rem;
+      line-height: 3rem;
+      font-weight: 500;
+      background-color: #f8f8f8;
+      color: var(--secondary); }
+    .landing-section .dates {
+      margin-top: 40px;
+      font-size: 3rem;
+      font-family: var(--Cocogoose);
+      color: #585858; }
+    .landing-section .location {
+      font-size: 2rem;
+      margin-top: 10px;
+      color: #585858; } }

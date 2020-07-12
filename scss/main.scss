@@ -1,104 +1,148 @@
 // Fonts and colours in accordance with design specification
 
 @font-face {
-    font-family: Cocogoose;
-    src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+  font-family: Cocogoose;
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
 }
 
 @font-face {
-    font-family: Lato;
-    src: url("../assets/fonts/lato-regular.ttf");
+  font-family: Lato;
+  src: url("../assets/fonts/lato-regular.ttf");
 }
 
-$font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+$font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
 $dark: #d3d3d3;
 $primary: #ec5242;
-$secondary: #272A31;
+$secondary: #272a31;
 
 // Import Bootstrap SCSS file
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 :root {
-    --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --grey: #d3d3d3;
-    --primary: #ec5242;
-    --secondary: #272A31;
+  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --grey: #d3d3d3;
+  --primary: #ec5242;
+  --secondary: #272a31;
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
-
 .centered-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing-section {
-    padding-left: 250px;
-    padding-top: 100px;
-    padding-bottom: 120px;
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--primary);
+  }
+  h1 {
+    font-family: var(--Cocogoose);
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: var(--primary);
+  }
+  .intro-box {
+    padding: 15px 15px;
+    margin: 15px -3px 0px;
+    border: 3px solid white;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    font-weight: 500;
     background-color: #f8f8f8;
-    h3 {
-        font-weight: 300;
-        font-size: 4rem;
-        color: var(--primary);
-    }
-    h1 {
-        font-family: var(--Cocogoose);
-        font-size: 5.5rem;
-        font-weight: 900;
-        width: 700px;
-        margin-top: 15px;
-        color: var(--primary);
-    }
-    .intro-box {
-        width: 600px;
-        padding: 20px;
-        border: 3px solid white;
-        font-size: 1.3rem;
-        line-height: 3rem;
-        font-weight: 500;
-        background-color: #f8f8f8;
-        color: var(--secondary);
-    }
-    .dates {
-        margin-top: 40px;
-        font-size: 3rem;
-        font-family: var(--Cocogoose);
-        color: #585858;
-    }
-    .location {
-        font-size: 2rem;
-        margin-top: 10px;
-        color: #585858;
-    }
+    color: var(--secondary);
+  }
+  .dates {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-family: var(--Cocogoose);
+    color: #585858;
+  }
+  .location {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #585858;
+  }
 }
 
 .partnership-section {
-    img {
-        width: 100px;
-    }
+  img {
+    width: 100px;
+  }
 }
 
 .featured-speakers-section {
-    .card-grid {
-        display: flex;
-        flex-wrap: wrap;
-        .card {
-            width: 50%;
-            min-width: 300px;
-            flex-grow: 1;
-        }
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 50%;
+      min-width: 300px;
+      flex-grow: 1;
     }
+  }
 }
 
 // Unique styles
 
+// Desktop version
 
-
+@media screen and (min-width: 768px) {
+  .landing-section {
+    padding-left: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h3 {
+      font-weight: 300;
+      font-size: 4rem;
+      color: var(--primary);
+    }
+    h1 {
+      font-family: var(--Cocogoose);
+      font-size: 5.5rem;
+      font-weight: 900;
+      width: 700px;
+      margin-top: 15px;
+      color: var(--primary);
+    }
+    .intro-box {
+      width: 600px;
+      padding: 20px;
+      border: 3px solid white;
+      font-size: 1.3rem;
+      line-height: 3rem;
+      font-weight: 500;
+      background-color: #f8f8f8;
+      color: var(--secondary);
+    }
+    .dates {
+      margin-top: 40px;
+      font-size: 3rem;
+      font-family: var(--Cocogoose);
+      color: #585858;
+    }
+    .location {
+      font-size: 2rem;
+      margin-top: 10px;
+      color: #585858;
+    }
+  }
+}
