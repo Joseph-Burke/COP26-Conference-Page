@@ -83,6 +83,29 @@ html {
   }
 }
 
+.main-program-section {
+    padding-top: 20px;
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        .card {
+            margin: 2.5px 0px;
+            .card-title {
+                color: var(--primary);
+                font-weight: 700;
+                padding: 0;
+                text-align: center;
+            }
+            .card-text {
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+
+
+
 .partnership-section {
   img {
     width: 100px;
@@ -93,10 +116,10 @@ html {
   .card-grid {
     display: flex;
     flex-wrap: wrap;
-    .card {
-      width: 50%;
-      min-width: 300px;
-      flex-grow: 1;
+        .card {
+        width: 50%;
+        min-width: 300px;
+        flex-grow: 1;
     }
   }
 }

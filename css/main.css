@@ -7221,6 +7221,22 @@ html {
     margin-top: 10px;
     color: #585858; }
 
+.main-program-section {
+  padding-top: 20px; }
+  .main-program-section .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr; }
+    .main-program-section .card-grid .card {
+      margin: 2.5px 0px; }
+      .main-program-section .card-grid .card .card-title {
+        color: var(--primary);
+        font-weight: 700;
+        padding: 0;
+        text-align: center; }
+      .main-program-section .card-grid .card .card-text {
+        padding: 10px 0px; }
+
 .partnership-section img {
   width: 100px; }
 
