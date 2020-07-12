@@ -7169,11 +7169,56 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+:root {
+  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --grey: #d3d3d3;
+  --primary: #ec5242;
+  --secondary: #272A31; }
+
+html {
+  font-size: 10px; }
+
 .centered-column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.landing-section {
+  padding-left: 250px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: #f8f8f8; }
+  .landing-section h3 {
+    font-weight: 300;
+    font-size: 4rem;
+    color: var(--primary); }
+  .landing-section h1 {
+    font-family: var(--Cocogoose);
+    font-size: 5.5rem;
+    font-weight: 900;
+    width: 700px;
+    margin-top: 15px;
+    color: var(--primary); }
+  .landing-section .intro-box {
+    width: 600px;
+    padding: 20px;
+    border: 3px solid white;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    background-color: #f8f8f8;
+    color: var(--secondary); }
+  .landing-section .dates {
+    margin-top: 40px;
+    font-size: 3rem;
+    font-family: var(--Cocogoose);
+    color: #585858; }
+  .landing-section .location {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #585858; }
 
 .partnership-section img {
   width: 100px; }
