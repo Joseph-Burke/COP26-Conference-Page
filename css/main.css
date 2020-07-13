@@ -7222,23 +7222,37 @@ html {
     color: #585858; }
 
 .main-program-section {
-  padding-top: 20px; }
+  color: #FEFEF9;
+  padding-top: 20px;
+  background-image: url(../assets/images/background-2.png);
+  background-size: 25px 25px;
+  background-repeat: repeat; }
   .main-program-section .card-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr; }
     .main-program-section .card-grid .card {
-      margin: 2.5px 0px; }
+      margin: 2.5px 0px;
+      background: rgba(255, 255, 255, 0.2); }
       .main-program-section .card-grid .card .card-title {
         color: var(--primary);
         font-weight: 700;
         padding: 0;
         text-align: center; }
       .main-program-section .card-grid .card .card-text {
-        padding: 10px 0px; }
+        padding: 10px 10px 10px 0px; }
+  .main-program-section button {
+    background-color: var(--primary);
+    border: none;
+    color: #FEFEF9;
+    font-size: 1.5rem; }
 
 .partnership-section img {
   width: 100px; }
+
+.featured-speakers-section h3 {
+  font-size: 1.4rem;
+  font-weight: 500; }
 
 .featured-speakers-section .card-grid {
   display: flex;
@@ -7246,7 +7260,25 @@ html {
   .featured-speakers-section .card-grid .card {
     width: 50%;
     min-width: 300px;
-    flex-grow: 1; }
+    flex-grow: 1;
+    margin: 5px 0px;
+    border: none;
+    letter-spacing: -0.05rem; }
+    .featured-speakers-section .card-grid .card .card-body {
+      padding-right: 0; }
+    .featured-speakers-section .card-grid .card .card-title {
+      margin-bottom: 4px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.08rem; }
+    .featured-speakers-section .card-grid .card .card-subtitle {
+      font-size: 0.7rem;
+      line-height: 1rem;
+      color: var(--primary);
+      font-style: italic;
+      letter-spacing: -0.06rem; }
+    .featured-speakers-section .card-grid .card .card-text {
+      font-size: 0.6rem; }
 
 @media screen and (min-width: 768px) {
   .landing-section {
