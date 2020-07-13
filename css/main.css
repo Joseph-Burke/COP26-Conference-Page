@@ -7280,6 +7280,20 @@ html {
     .featured-speakers-section .card-grid .card .card-text {
       font-size: 0.6rem; }
 
+.partnership-section {
+  background-color: #414246;
+  padding: 10px; }
+  .partnership-section h3 {
+    margin: 10px 0px;
+    color: white;
+    font-size: 1.5rem; }
+  .partnership-section svg {
+    width: 60px;
+    height: auto;
+    margin: -5px 15px;
+    fill: rgba(255, 255, 255, 0.4);
+    background: transparent; }
+
 @media screen and (min-width: 768px) {
   .landing-section {
     padding-left: 250px;

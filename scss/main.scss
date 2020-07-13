@@ -161,6 +161,23 @@ html {
   }
 }
 
+.partnership-section {
+  background-color: #414246;
+  padding: 10px;
+  h3 {
+    margin: 10px 0px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  svg {
+    width: 60px;
+    height: auto;
+    margin: -5px 15px;
+    fill: rgba(255, 255, 255, 0.4);
+    background: transparent;
+  }
+}
+
 // Unique styles
 
 // Desktop version
