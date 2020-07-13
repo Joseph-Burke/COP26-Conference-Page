@@ -8,29 +8,15 @@
 @import "general-after-bs.scss";
 
 .landing-section {
-  background-color: #f8f8f8;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  @extend .landing-section;
   h3 {
-    font-weight: 300;
-    font-size: 2rem;
-    color: var(--primary);
+    @extend .landing-text-subtitle;
   }
   h1 {
-    font-family: var(--Cocogoose);
-    font-size: 2.7rem;
-    font-weight: 900;
-    color: var(--primary);
+    @extend .landing-text-title;
   }
   .intro-box {
-    padding: 15px 15px;
-    margin: 15px -3px 0px;
-    border: 3px solid white;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-    font-weight: 500;
-    background-color: #f8f8f8;
-    color: var(--secondary);
+    @extend .landing-page-text-box;
   }
   .dates {
     margin-top: 30px;
@@ -150,10 +136,6 @@
     fill: rgba(255, 255, 255, 0.4);
     background: transparent;
   }
-}
-
-footer {
-  padding: 20px;
 }
 
 // Unique styles

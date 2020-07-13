@@ -7188,38 +7188,45 @@ html {
   align-items: center;
   justify-content: center; }
 
+footer {
+  padding: 20px; }
+
 .landing-section {
   background-color: #f8f8f8;
   padding-top: 40px;
   padding-bottom: 40px; }
-  .landing-section h3 {
-    font-weight: 300;
-    font-size: 2rem;
-    color: var(--primary); }
-  .landing-section h1 {
-    font-family: var(--Cocogoose);
-    font-size: 2.7rem;
-    font-weight: 900;
-    color: var(--primary); }
-  .landing-section .intro-box {
-    padding: 15px 15px;
-    margin: 15px -3px 0px;
-    border: 3px solid white;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-    font-weight: 500;
-    background-color: #f8f8f8;
-    color: var(--secondary); }
-  .landing-section .dates {
-    margin-top: 30px;
-    font-size: 2rem;
-    font-family: var(--Cocogoose);
-    color: #585858; }
-  .landing-section .location {
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-top: 10px;
-    color: #585858; }
+
+.landing-text-title, .landing-section h1 {
+  font-family: var(--Cocogoose);
+  font-weight: 900;
+  color: var(--primary); }
+
+.landing-text-subtitle, .landing-section h3 {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: var(--primary); }
+
+.landing-page-text-box, .landing-section .intro-box {
+  padding: 15px 15px;
+  margin: 15px -3px 0px;
+  border: 3px solid white;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  color: var(--secondary); }
+
+.landing-section .dates {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-family: var(--Cocogoose);
+  color: #585858; }
+
+.landing-section .location {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #585858; }
 
 .main-program-section {
   color: #FEFEF9;
@@ -7302,9 +7309,6 @@ html {
     margin: -5px 15px;
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
-
-footer {
-  padding: 20px; }
 
 @media screen and (min-width: 768px) {
   .landing-section {

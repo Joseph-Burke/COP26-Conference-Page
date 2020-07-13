@@ -7,6 +7,36 @@
 // Import multi-page styles from _general-after-bs.scss file
 @import "general-after-bs.scss";
 
+.landing-section {
+    @extend .landing-section;
+    padding: 20px 15px;
+    h3 {
+        @extend .landing-text-subtitle;
+        margin-bottom: 15px;
+  }
+    h1 {
+        @extend .landing-text-title;
+        font-size: 2.2rem;
+  }
+  .intro-box {
+      @extend .landing-page-text-box;
+      text-align: center;
+      background: white;
+      color: #5E5E5E;
+      border: 1px solid #f0f0f0;
+      padding: 15px 10px;
+  }
+  .general-enquiries {
+      margin: 10px 0px;
+      color: var(--gray-dark);
+      a {
+          text-decoration: underline;
+          color: var(--gray-dark);
+          font-weight: 700;
+      }
+  }
+}
+
 .partnership-section {
     img {
         width: 100px;

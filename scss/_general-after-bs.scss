@@ -8,3 +8,36 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+footer {
+  padding: 20px;
+}
+
+.landing-section {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.landing-text-title {
+  font-family: var(--Cocogoose);
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.landing-text-subtitle {
+    font-weight: 300;
+    font-size: 1.9rem;
+    color: var(--primary);
+}
+
+.landing-page-text-box {
+    padding: 15px 15px;
+    margin: 15px -3px 0px;
+    border: 3px solid white;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    background-color: #f8f8f8;
+    color: var(--secondary);
+}

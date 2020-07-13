@@ -7188,6 +7188,54 @@ html {
   align-items: center;
   justify-content: center; }
 
+footer {
+  padding: 20px; }
+
+.landing-section {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.landing-text-title, .landing-section h1 {
+  font-family: var(--Cocogoose);
+  font-weight: 900;
+  color: var(--primary); }
+
+.landing-text-subtitle, .landing-section h3 {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: var(--primary); }
+
+.landing-page-text-box, .landing-section .intro-box {
+  padding: 15px 15px;
+  margin: 15px -3px 0px;
+  border: 3px solid white;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  color: var(--secondary); }
+
+.landing-section {
+  padding: 20px 15px; }
+  .landing-section h3 {
+    margin-bottom: 15px; }
+  .landing-section h1 {
+    font-size: 2.2rem; }
+  .landing-section .intro-box {
+    text-align: center;
+    background: white;
+    color: #5E5E5E;
+    border: 1px solid #f0f0f0;
+    padding: 15px 10px; }
+  .landing-section .general-enquiries {
+    margin: 10px 0px;
+    color: var(--gray-dark); }
+    .landing-section .general-enquiries a {
+      text-decoration: underline;
+      color: var(--gray-dark);
+      font-weight: 700; }
+
 .partnership-section img {
   width: 100px; }
 
