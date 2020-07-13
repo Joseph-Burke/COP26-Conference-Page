@@ -7231,6 +7231,20 @@ footer {
   bottom: -7.5px;
   background-color: var(--primary); }
 
+.partnership-section {
+  background-color: #414246;
+  padding: 10px; }
+  .partnership-section h3 {
+    margin: 10px 0px;
+    color: #f1f1f1;
+    font-size: 1.5rem; }
+  .partnership-section svg {
+    width: 60px;
+    height: auto;
+    margin: -5px 15px;
+    fill: rgba(255, 255, 255, 0.4);
+    background: transparent; }
+
 .landing-section .dates {
   margin-top: 30px;
   font-size: 2rem;
@@ -7310,20 +7324,6 @@ footer {
     margin: 20px 0px; }
     .featured-speakers-section .more-button .fa-chevron-down {
       color: var(--primary); }
-
-.partnership-section {
-  background-color: #414246;
-  padding: 10px; }
-  .partnership-section h3 {
-    margin: 10px 0px;
-    color: #f1f1f1;
-    font-size: 1.5rem; }
-  .partnership-section svg {
-    width: 60px;
-    height: auto;
-    margin: -5px 15px;
-    fill: rgba(255, 255, 255, 0.4);
-    background: transparent; }
 
 @media screen and (min-width: 768px) {
   .landing-section {
