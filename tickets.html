@@ -25,6 +25,14 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/tickets.css" />
     <title>Capstone HTML/CSS</title>
@@ -61,36 +69,38 @@
     </header>
     <main>
       <form>
-        <section class="centered-column container-fluid">
-          <h3>Select Tickets</h3>
+        <section class="tickets-section centered-column container-fluid">
+          <h3 class="section-title">Select Tickets</h3>
 
-          <div class="container text-center m-0">
-            <span>STEP 1</span>
+          <div class="instructions text-center">
+            <span class="step pr-3">&#9670; STEP 1</span>
             <span
-              >Please select the day when you want to join CC Global Summit
-              2015</span
+              >Please select which week(s) of the conference you would like to
+              attend</span
             >
           </div>
 
           <fieldset class="tickets">
-            <table class="table-responsive">
+            <table class="table table-responsive">
               <thead>
                 <tr>
                   <th scope="col">Ticket</th>
-                  <th scope="col">1-Day-Ticket</th>
                   <th class="text-center" scope="col" colspan="2">
-                    2-Day-Ticket
+                    1-Week-Ticket
                   </th>
-                  <th scope="col text-break">CC Affiliate/Partners</th>
+                  <th scope="col">
+                    Full Conference Ticket
+                  </th>
+                  <th scope="col text-break">UN/Corporate Affiliates</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">Date</th>
-                  <td>15.Oct (Thu)</td>
-                  <td>16.Oct (Fri)</td>
-                  <td class="text-break">15.-16. Oct (Thu-Fri)</td>
-                  <td class="text-break">15.-16. Oct (Thu-Fri)</td>
+                  <td>01.11 - 07.11</td>
+                  <td>06.11 - 12.11</td>
+                  <td class="text-break">01.11 - 12.11</td>
+                  <td class="text-break">01.11 - 12.11</td>
                 </tr>
                 <tr>
                   <th scope="row">Normal</th>
@@ -99,9 +109,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="01/11 1-Week-Ticket Normal"
                     />
                   </td>
                   <td class="form-check d-table-cell">
@@ -109,9 +118,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="06/11 1-Week-Ticket Normal"
                     />
                   </td>
                   <td class="form-check d-table-cell">
@@ -119,9 +127,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="Full-Conference Normal"
                     />
                   </td>
                   <td class="form-check d-table-cell">
@@ -129,9 +136,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="Affiliate Normal"
                     />
                   </td>
                 </tr>
@@ -143,9 +149,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="01/11 1-Week-Ticket Students"
                     />
                   </td>
                   <td class="form-check d-table-cell">
@@ -153,9 +158,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="06/11 1-Week-Ticket Normal"
                     />
                   </td>
                   <td class="form-check d-table-cell">
@@ -163,9 +167,8 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="Full-Conference Normal"
                     />
                   </td>
                   <td class="form-check d-table-cell">
@@ -173,88 +176,84 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name=""
-                      id=""
-                      value=""
+                      name="ticket"
+                      value="Affiliate Student"
                     />
                   </td>
                 </tr>
               </tbody>
             </table>
+            <span class="page-break-arrow">
+              <i class="fas fa-chevron-down"></i>
+            </span>
           </fieldset>
         </section>
 
-        <section class="lunch-section centered-column container-fluid">
-          <h3>Select Your Lunch</h3>
+        <section class="food-section centered-column container-fluid">
+          <h3 class="section-title">Select Your Lunch</h3>
 
-          <div class="container text-center m-0">
-            <span>STEP 2</span>
+          <div class="instructions text-center">
+            <span class="step pr-3">&#9670; STEP 2</span>
             <span
-              >Please select your lunch for registered day. There will be no
-              further costs for the lunch.</span
+              >Please select your food preferences for your complementary lunch
+              and dinner. A range of dietary needs will be catered for.</span
             >
           </div>
 
           <fieldset class="container px-0">
-            <legend class="text-center bg-dark">Day 1</legend>
-            <ul class="d-flex flex-wrap justify-content-around">
+            <header class="text-center">Lunch</header>
+            <ul class="d-flex flex-wrap">
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 1</label>
+                <label class="form-check-label">Vegan</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Lunch"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 2</label>
+                <label class="form-check-label">Vegetarian</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Lunch"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 3</label>
+                <label class="form-check-label">Pescatarian</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Lunch"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 4</label>
+                <label class="form-check-label">Omnivore</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Lunch"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 5</label>
+                <label class="form-check-label">Halal</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Lunch"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 6</label>
+                <label class="form-check-label">Lactose Intolerant</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Lunch"
                   value=""
                 />
               </li>
@@ -262,65 +261,59 @@
           </fieldset>
 
           <fieldset class="container px-0">
-            <legend class="text-center bg-dark">Day 2</legend>
-            <ul class="d-flex flex-wrap justify-content-around">
+            <header class="text-center">Dinner</header>
+            <ul class="d-flex flex-wrap">
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 1</label>
+                <label class="form-check-label">Vegan</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Dinner"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 2</label>
+                <label class="form-check-label">Vegetarian</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Dinner"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 3</label>
+                <label class="form-check-label">Pescatarian</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Dinner"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 4</label>
+                <label class="form-check-label">Omnivore</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Dinner"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 5</label>
+                <label class="form-check-label">Halal</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Dinner"
                   value=""
                 />
               </li>
               <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Menu 6</label>
+                <label class="form-check-label">Lactose Intolerant</label>
                 <input
                   class="form-check-input"
                   type="radio"
-                  name=""
-                  id=""
+                  name="Dinner"
                   value=""
                 />
               </li>
@@ -332,8 +325,14 @@
     </main>
     <footer class="container-fluid">
       <div class="container d-flex justify-content-center flex-nowrap">
-        <img class="united-nations-logo col-6" src="assets/images/UN-logo.svg">
-        <img class="UK-government-logo col-6" src="assets/images/UK-government-logo.svg">
+        <img
+          class="united-nations-logo col-6"
+          src="assets/images/UN-logo.svg"
+        />
+        <img
+          class="UK-government-logo col-6"
+          src="assets/images/UK-government-logo.svg"
+        />
       </div>
     </footer>
   </body>

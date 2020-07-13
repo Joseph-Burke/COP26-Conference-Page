@@ -57,10 +57,7 @@
         }
     }
     button {
-      background-color: var(--primary);
-      border: none;
-      color: #FEFEF9;
-      font-size: 1.5rem;
+      @extend .primary-button;
     }
 }
 

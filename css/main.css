@@ -7245,6 +7245,12 @@ footer {
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
 
+.primary-button, .main-program-section button {
+  background-color: var(--primary);
+  border: none;
+  color: #FEFEF9;
+  font-size: 1.5rem; }
+
 .landing-section .dates {
   margin-top: 30px;
   font-size: 2rem;
@@ -7277,11 +7283,6 @@ footer {
         text-align: center; }
       .main-program-section .card-grid .card .card-text {
         padding: 10px 10px 10px 0px; }
-  .main-program-section button {
-    background-color: var(--primary);
-    border: none;
-    color: #FEFEF9;
-    font-size: 1.5rem; }
 
 .partnership-section img {
   width: 100px; }

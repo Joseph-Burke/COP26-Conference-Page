@@ -7188,27 +7188,152 @@ html {
   align-items: center;
   justify-content: center; }
 
+footer {
+  padding: 20px; }
+
+.landing-section {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.landing-text-title {
+  font-family: var(--Cocogoose);
+  font-weight: 900;
+  color: var(--primary); }
+
+.landing-text-subtitle {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: var(--primary); }
+
+.landing-page-text-box {
+  padding: 15px 15px;
+  margin: 15px -3px 0px;
+  border: 3px solid white;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  color: var(--secondary); }
+
+.section-title {
+  margin: 15px 0px;
+  font-size: 1.6rem;
+  position: relative; }
+
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 1px;
+  width: 20px;
+  bottom: -7.5px;
+  background-color: var(--primary); }
+
+.partnership-section {
+  background-color: #414246;
+  padding: 10px; }
+  .partnership-section h3 {
+    margin: 10px 0px;
+    color: #f1f1f1;
+    font-size: 1.5rem; }
+  .partnership-section svg {
+    width: 60px;
+    height: auto;
+    margin: -5px 15px;
+    fill: rgba(255, 255, 255, 0.4);
+    background: transparent; }
+
+.primary-button, .food-section button {
+  background-color: var(--primary);
+  border: none;
+  color: #FEFEF9;
+  font-size: 1.5rem; }
+
 .partnership-section img {
   width: 100px; }
 
+form section {
+  padding: 15px 0px; }
+
+form .instructions {
+  display: flex;
+  margin: 15px 0px 25px 0px;
+  padding: 10px;
+  border: 1px solid var(--dark);
+  border-radius: 20px; }
+  form .instructions .step {
+    white-space: nowrap;
+    align-self: center;
+    color: var(--primary);
+    font-weight: 600; }
+
+form .tickets-section {
+  position: relative;
+  background-color: #f7f7f7;
+  padding-bottom: 30px; }
+  form .tickets-section .page-break-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    bottom: -10px;
+    background: var(--primary);
+    transform: rotate(45deg); }
+    form .tickets-section .page-break-arrow .fa-chevron-down {
+      font-size: 1rem;
+      font-weight: 900;
+      position: relative;
+      transform: rotate(-45deg);
+      top: 2.7px;
+      left: 5.5px;
+      color: white; }
+
 form .tickets {
-  max-width: 100%; }
+  max-width: 100%;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 15px 50px -47px black, 0px 23px 26px -61px black; }
   form .tickets table {
+    position: relative;
     text-align: center;
-    border: 1px solid #333; }
+    border: 5px solid transparent;
+    background: repeating-linear-gradient(135deg, #F93927, #F93927 5px, #F6F1F4 5px, #F6F1F4 10px, #1A2E5E 10px, #1A2E5E 15px, #F6F1F4 15px, #F6F1F4 20px); }
     form .tickets table td,
     form .tickets table th {
-      padding: 20px 40px; }
+      padding: 5px 0;
+      border: 1px solid #e6e6e6;
+      background: #f7f7f7; }
 
-form .form-check-input {
+.form-check-input {
   position: static;
   display: block;
   margin: 0px auto;
   align-self: center; }
 
-form .lunch-section ul,
-form .lunch-section li {
-  padding: 0; }
-
-form .lunch-section li {
-  margin: 0 2px; }
+.food-section {
+  background-color: #fefefe; }
+  .food-section fieldset {
+    border: 1px solid var(--dark);
+    margin: 10px 0px;
+    position: relative; }
+  .food-section header {
+    background: #F6F6F6;
+    color: #585858;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px 0px; }
+  .food-section ul {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6px 0px;
+    padding: 0; }
+  .food-section li {
+    padding: 0;
+    margin: 5px 2px; }
+    .food-section li .form-check-label,
+    .food-section li .form-check-input {
+      margin: 0 3px; }
+  .food-section button {
+    font-size: 1.2rem;
+    margin-top: 10px; }
