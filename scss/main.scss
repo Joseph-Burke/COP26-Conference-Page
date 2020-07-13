@@ -1,48 +1,11 @@
-// Fonts and colours in accordance with design specification
-
-@font-face {
-  font-family: Cocogoose;
-  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
-}
-
-@font-face {
-  font-family: Lato;
-  src: url("../assets/fonts/lato-regular.ttf");
-}
-
-$font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
-$dark: #d3d3d3;
-$primary: #ec5242;
-$secondary: #272a31;
+// Import multi-page styles from _general-before-bs.scss file
+@import "general-before-bs.scss";
 
 // Import Bootstrap SCSS file
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-:root {
-  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --grey: #d3d3d3;
-  --primary: #ec5242;
-  --secondary: #272a31;
-}
-
-html {
-  font-size: 10px;
-}
-
-.centered-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+// Import multi-page styles from _general-after-bs.scss file
+@import "general-after-bs.scss";
 
 .landing-section {
   background-color: #f8f8f8;
@@ -124,6 +87,7 @@ html {
 }
 
 .featured-speakers-section {
+  letter-spacing: -0.05rem;
   h3 {
     font-size: 1.4rem;
     font-weight: 500;
@@ -157,6 +121,16 @@ html {
         .card-text {
           font-size: 0.6rem;
         }
+    }
+  }
+  .more-button {
+    align-self: stretch;
+    font-size: 0.8rem;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 2px;
+    margin: 20px 0px;
+    .fa-chevron-down {
+      color: var(--primary);
     }
   }
 }

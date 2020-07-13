@@ -1,30 +1,11 @@
-// Fonts and colours in accordance with design specification
-
-@font-face {
-    font-family: Cocogoose;
-    src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
-}
-
-@font-face {
-    font-family: Lato;
-    src: url("../assets/fonts/lato-regular.ttf");
-}
-
-$font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
-$dark: #d3d3d3;
-$primary: #ec5242;
-$secondary: #272A31;
+// Import multi-page styles from _general-before-bs.scss file
+@import "general-before-bs.scss";
 
 // Import Bootstrap SCSS file
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-.centered-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+// Import multi-page styles from _general-after-bs.scss file
+@import "general-after-bs.scss";
 
 .partnership-section {
     img {

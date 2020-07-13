@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Cocogoose;
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../assets/fonts/lato-regular.ttf");
+}
+
+$font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+$dark: #d3d3d3;
+$primary: #ec5242;
+$secondary: #272a31;
+
+:root {
+  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --grey: #d3d3d3;
+  --primary: #ec5242;
+  --secondary: #272a31;
+}

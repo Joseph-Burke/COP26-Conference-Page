@@ -6,6 +6,16 @@
   font-family: Lato;
   src: url("../assets/fonts/lato-regular.ttf"); }
 
+:root {
+  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --grey: #d3d3d3;
+  --primary: #ec5242;
+  --secondary: #272a31; }
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -7169,16 +7179,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-:root {
-  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --grey: #d3d3d3;
-  --primary: #ec5242;
-  --secondary: #272a31; }
-
 html {
   font-size: 10px; }
 
@@ -7250,35 +7250,44 @@ html {
 .partnership-section img {
   width: 100px; }
 
-.featured-speakers-section h3 {
-  font-size: 1.4rem;
-  font-weight: 500; }
-
-.featured-speakers-section .card-grid {
-  display: flex;
-  flex-wrap: wrap; }
-  .featured-speakers-section .card-grid .card {
-    width: 50%;
-    min-width: 300px;
-    flex-grow: 1;
-    margin: 5px 0px;
-    border: none;
-    letter-spacing: -0.05rem; }
-    .featured-speakers-section .card-grid .card .card-body {
-      padding-right: 0; }
-    .featured-speakers-section .card-grid .card .card-title {
-      margin-bottom: 4px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      letter-spacing: -0.08rem; }
-    .featured-speakers-section .card-grid .card .card-subtitle {
-      font-size: 0.7rem;
-      line-height: 1rem;
-      color: var(--primary);
-      font-style: italic;
-      letter-spacing: -0.06rem; }
-    .featured-speakers-section .card-grid .card .card-text {
-      font-size: 0.6rem; }
+.featured-speakers-section {
+  letter-spacing: -0.05rem; }
+  .featured-speakers-section h3 {
+    font-size: 1.4rem;
+    font-weight: 500; }
+  .featured-speakers-section .card-grid {
+    display: flex;
+    flex-wrap: wrap; }
+    .featured-speakers-section .card-grid .card {
+      width: 50%;
+      min-width: 300px;
+      flex-grow: 1;
+      margin: 5px 0px;
+      border: none;
+      letter-spacing: -0.05rem; }
+      .featured-speakers-section .card-grid .card .card-body {
+        padding-right: 0; }
+      .featured-speakers-section .card-grid .card .card-title {
+        margin-bottom: 4px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: -0.08rem; }
+      .featured-speakers-section .card-grid .card .card-subtitle {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        color: var(--primary);
+        font-style: italic;
+        letter-spacing: -0.06rem; }
+      .featured-speakers-section .card-grid .card .card-text {
+        font-size: 0.6rem; }
+  .featured-speakers-section .more-button {
+    align-self: stretch;
+    font-size: 0.8rem;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    margin: 20px 0px; }
+    .featured-speakers-section .more-button .fa-chevron-down {
+      color: var(--primary); }
 
 .partnership-section {
   background-color: #414246;
