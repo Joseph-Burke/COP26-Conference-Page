@@ -166,7 +166,7 @@ html {
   padding: 10px;
   h3 {
     margin: 10px 0px;
-    color: white;
+    color: #f1f1f1;
     font-size: 1.5rem;
   }
   svg {
@@ -176,6 +176,10 @@ html {
     fill: rgba(255, 255, 255, 0.4);
     background: transparent;
   }
+}
+
+footer {
+  padding: 20px;
 }
 
 // Unique styles

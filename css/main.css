@@ -7285,7 +7285,7 @@ html {
   padding: 10px; }
   .partnership-section h3 {
     margin: 10px 0px;
-    color: white;
+    color: #f1f1f1;
     font-size: 1.5rem; }
   .partnership-section svg {
     width: 60px;
@@ -7293,6 +7293,9 @@ html {
     margin: -5px 15px;
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
+
+footer {
+  padding: 20px; }
 
 @media screen and (min-width: 768px) {
   .landing-section {
