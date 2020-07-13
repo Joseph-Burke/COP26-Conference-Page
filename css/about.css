@@ -7216,6 +7216,21 @@ footer {
   background-color: #f8f8f8;
   color: var(--secondary); }
 
+.section-title {
+  margin: 15px 0px;
+  font-size: 1.6rem;
+  position: relative; }
+
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 1px;
+  width: 20px;
+  bottom: -7.5px;
+  background-color: var(--primary); }
+
 .landing-section {
   padding: 20px 15px; }
   .landing-section h3 {
