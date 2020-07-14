@@ -168,7 +168,7 @@
       font-size: 2.4rem;
     }
     .location {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: 500;
     }
   }
@@ -228,6 +228,15 @@
           padding: 0;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-section {
+    padding-left: 150px;
+    h1 {
+      font-size: 5.5rem;
     }
   }
 }

@@ -7201,7 +7201,7 @@ header .navbar {
 
 footer > * {
   max-height: 60px;
-  padding: 5px 0px; }
+  padding: 10px 0px; }
 
 .landing-section {
   background-color: #f8f8f8;
@@ -7266,7 +7266,7 @@ footer > * {
 @media screen and (min-width: 768px) {
   .section-title {
     margin: 20px 0px;
-    font-size: 2rem; } }
+    font-size: 2.2rem; } }
 
 .partnership-section img {
   width: 100px; }
@@ -7276,10 +7276,11 @@ form section {
 
 form .instructions {
   display: flex;
+  max-width: 400px;
   margin: 15px 0px 25px 0px;
   padding: 10px;
   border: 1px solid var(--dark);
-  border-radius: 20px; }
+  border-radius: 50px; }
   form .instructions .step {
     white-space: nowrap;
     align-self: center;
@@ -7315,17 +7316,24 @@ form .tickets {
     position: relative;
     text-align: center;
     border: 5px solid transparent;
-    background: repeating-linear-gradient(135deg, #F93927, #F93927 5px, #F6F1F4 5px, #F6F1F4 10px, #1A2E5E 10px, #1A2E5E 15px, #F6F1F4 15px, #F6F1F4 20px); }
+    background: repeating-linear-gradient(135deg, #f93927, #f93927 5px, #f6f1f4 5px, #f6f1f4 10px, #1a2e5e 10px, #1a2e5e 15px, #f6f1f4 15px, #f6f1f4 20px); }
+    form .tickets table .student-row td,
+    form .tickets table .normal-row td {
+      font-weight: 700;
+      color: var(--primary); }
+    form .tickets table th {
+      font-weight: normal; }
     form .tickets table td,
     form .tickets table th {
       padding: 5px 0;
       border: 1px solid #e6e6e6;
-      background: #f7f7f7; }
+      background: #f7f7f7;
+      vertical-align: center; }
 
 .form-check-input {
   position: static;
   display: block;
-  margin: 0px auto;
+  margin: 5px auto;
   align-self: center; }
 
 .food-section {
@@ -7335,7 +7343,7 @@ form .tickets {
     margin: 10px 0px;
     position: relative; }
   .food-section header {
-    background: #F6F6F6;
+    background: #f6f6f6;
     color: #585858;
     font-size: 1.3rem;
     font-weight: 500;
@@ -7354,3 +7362,23 @@ form .tickets {
   .food-section button {
     font-size: 1.2rem;
     margin-top: 10px; }
+
+@media screen and (min-width: 768px) {
+  form .tickets-section .instructions,
+  form .food-section .instructions {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    max-width: 700px; }
+  form .tickets-section {
+    padding-bottom: 50px; }
+    form .tickets-section .tickets table th,
+    form .tickets-section .tickets table td {
+      font-size: 2rem;
+      padding: 10px 20px; }
+  form .food-section fieldset {
+    font-size: 1.6rem;
+    max-width: 900px; }
+    form .food-section fieldset header {
+      font-size: 1.8rem; }
+  form .food-section button {
+    font-size: 2rem; } }

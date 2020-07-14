@@ -35,12 +35,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/tickets.css" />
-    <title>Capstone HTML/CSS</title>
+    <title>COP26 - Tickets</title>
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <button
           class="navbar-toggler"
           type="button"
@@ -88,7 +88,7 @@
                 <tr>
                   <th scope="col">Ticket</th>
                   <th class="text-center" scope="col" colspan="2">
-                    1-Week-Ticket
+                    1-Week Ticket
                   </th>
                   <th scope="col">
                     Full Conference Ticket
@@ -104,7 +104,7 @@
                   <td class="text-break">01.11 - 12.11</td>
                   <td class="text-break">01.11 - 12.11</td>
                 </tr>
-                <tr>
+                <tr class="normal-row">
                   <th scope="row">Normal</th>
                   <td class="form-check d-table-cell">
                     <label class="form-check-label">£70</label>
@@ -143,7 +143,7 @@
                     />
                   </td>
                 </tr>
-                <tr>
+                <tr class="student-row">
                   <th scope="row">Students</th>
 
                   <td class="form-check d-table-cell">
@@ -202,125 +202,129 @@
             >
           </div>
 
-          <fieldset class="container px-0">
-            <header class="text-center">Lunch</header>
-            <ul class="d-flex flex-wrap">
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Vegan</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Lunch"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Vegetarian</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Lunch"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Pescatarian</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Lunch"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Omnivore</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Lunch"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Halal</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Lunch"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Lactose Intolerant</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Lunch"
-                  value=""
-                />
-              </li>
-            </ul>
-          </fieldset>
+          <div class="centered-column flex-md-row">
 
-          <fieldset class="container px-0">
-            <header class="text-center">Dinner</header>
-            <ul class="d-flex flex-wrap">
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Vegan</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Dinner"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Vegetarian</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Dinner"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Pescatarian</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Dinner"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Omnivore</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Dinner"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Halal</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Dinner"
-                  value=""
-                />
-              </li>
-              <li class="form-check d-inline-flex align-items-center">
-                <label class="form-check-label">Lactose Intolerant</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="Dinner"
-                  value=""
-                />
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="container px-0 mx-md-3">
+              <header class="text-center">Lunch</header>
+              <ul class="d-flex flex-wrap">
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegan</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegetarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Pescatarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Omnivore</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Halal</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Lactose Intolerant</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="container px-0 mx-md-3">
+              <header class="text-center">Dinner</header>
+              <ul class="d-flex flex-wrap">
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegan</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegetarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Pescatarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Omnivore</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Halal</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Lactose Intolerant</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+              </ul>
+            </fieldset>
+
+          </div>
           <button class="px-5 py-3" type="submit">Submit Form</button>
         </section>
       </form>

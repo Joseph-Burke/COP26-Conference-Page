@@ -7,6 +7,40 @@
 // Import multi-page styles from _general-after-bs.scss file
 @import "general-after-bs.scss";
 
+header {
+  .dark-banner {
+    padding: 8px 250px;
+    background-color: #3E3E3E;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 0;
+    li {
+      margin: 0 10px;
+      .social-media-icon {
+        font-size: 1.5rem;
+      }
+    }
+    .fa-twitter {
+      margin-right: 8px;
+    }
+    a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+  .navbar {
+    background-color: white;
+    padding: 8px 250px;
+    .navbar-brand {
+      height: 50px;
+      width: 50px;
+      background: url(../assets/images/COP26-logo.png);
+      background-size: 207%;
+    }
+  }
+}
+
 .landing-section {
   @extend .landing-section;
   padding: 20px 15px;
@@ -51,6 +85,7 @@
   padding: 10px 20px;
   .card-grid {
     max-width: 600px;
+    margin-bottom: 20px;
     .card {
       flex-grow: 1;
       height: 145px;
@@ -129,6 +164,11 @@
     border-bottom: 2px solid #ededed;
     .logo-info {
       font-size: 1.2rem;
+    }
+    img {
+        width: 400px;
+        height: 200px;
+        padding: 20px;
     }
   }
   .past-conferences-section {

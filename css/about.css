@@ -7266,7 +7266,33 @@ footer > * {
 @media screen and (min-width: 768px) {
   .section-title {
     margin: 20px 0px;
-    font-size: 2rem; } }
+    font-size: 2.2rem; } }
+
+header .dark-banner {
+  padding: 8px 250px;
+  background-color: #3E3E3E;
+  list-style-type: none;
+  align-items: center;
+  margin-bottom: 0; }
+  header .dark-banner li {
+    margin: 0 10px; }
+    header .dark-banner li .social-media-icon {
+      font-size: 1.5rem; }
+  header .dark-banner .fa-twitter {
+    margin-right: 8px; }
+  header .dark-banner a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300; }
+
+header .navbar {
+  background-color: white;
+  padding: 8px 250px; }
+  header .navbar .navbar-brand {
+    height: 50px;
+    width: 50px;
+    background: url(../assets/images/COP26-logo.png);
+    background-size: 207%; }
 
 .landing-section {
   padding: 20px 15px; }
@@ -7299,7 +7325,8 @@ footer > * {
 .past-conferences-section {
   padding: 10px 20px; }
   .past-conferences-section .card-grid {
-    max-width: 600px; }
+    max-width: 600px;
+    margin-bottom: 20px; }
     .past-conferences-section .card-grid .card {
       flex-grow: 1;
       height: 145px;
@@ -7352,6 +7379,10 @@ footer > * {
     border-bottom: 2px solid #ededed; }
     .logo-section .logo-info {
       font-size: 1.2rem; }
+    .logo-section img {
+      width: 400px;
+      height: 200px;
+      padding: 20px; }
   .past-conferences-section .section-text {
     font-size: 1.2rem; }
   .past-conferences-section .card-grid {

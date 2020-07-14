@@ -7201,7 +7201,7 @@ header .navbar {
 
 footer > * {
   max-height: 60px;
-  padding: 5px 0px; }
+  padding: 10px 0px; }
 
 .landing-section {
   background-color: #f8f8f8;
@@ -7266,7 +7266,7 @@ footer > * {
 @media screen and (min-width: 768px) {
   .section-title {
     margin: 20px 0px;
-    font-size: 2rem; } }
+    font-size: 2.2rem; } }
 
 .landing-section .dates {
   margin-top: 30px;
@@ -7381,7 +7381,7 @@ footer > * {
     .landing-section .dates {
       font-size: 2.4rem; }
     .landing-section .location {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: 500; }
   .main-program-section .card-grid {
     grid-template-columns: repeat(5, 1fr);
@@ -7424,3 +7424,9 @@ footer > * {
         font-size: 0.7rem; }
       .featured-speakers-section .card-grid .card img {
         padding: 0; } }
+
+@media screen and (min-width: 1024px) {
+  .landing-section {
+    padding-left: 150px; }
+    .landing-section h1 {
+      font-size: 5.5rem; } }
