@@ -79,6 +79,8 @@
   .card-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
     .card::before {
       content: "";
       display: block;
@@ -91,10 +93,9 @@
       background-size: 40px;
     }
     .card {
-      width: 50%;
-      min-width: 300px;
+      max-width: max-content;
       flex-grow: 1;
-      margin: 10px 0px;
+      margin: 10px;
       border: none;
       letter-spacing: -0.05rem;
       img {
@@ -107,6 +108,7 @@
       }
       .card-body {
         padding-right: 0;
+        max-width: 200px;
       }
       .card-title {
         margin-bottom: 4px;
@@ -141,8 +143,6 @@
 .partnership-section {
   @extend .partnership-section;
 }
-
-// Unique styles
 
 // Desktop version
 
@@ -208,13 +208,10 @@
     }
   }
   .featured-speakers-section {
-    padding: 0 100px;
     .card-grid {
       .card {
         display: flex;
-        margin: 20px 0px;
         min-width: 0px;
-        max-width: 250px;
         .card-title {
           font-size: 1.4rem;
         }

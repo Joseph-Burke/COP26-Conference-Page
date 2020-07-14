@@ -7336,7 +7336,9 @@ footer > * {
     font-weight: 500; }
   .featured-speakers-section .card-grid {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px; }
     .featured-speakers-section .card-grid .card::before {
       content: "";
       display: block;
@@ -7348,10 +7350,9 @@ footer > * {
       background: url(../assets/images/checkered-black-and-white.jpg);
       background-size: 40px; }
     .featured-speakers-section .card-grid .card {
-      width: 50%;
-      min-width: 300px;
+      max-width: max-content;
       flex-grow: 1;
-      margin: 10px 0px;
+      margin: 10px;
       border: none;
       letter-spacing: -0.05rem; }
       .featured-speakers-section .card-grid .card img {
@@ -7362,7 +7363,8 @@ footer > * {
         padding-right: 0;
         position: relative; }
       .featured-speakers-section .card-grid .card .card-body {
-        padding-right: 0; }
+        padding-right: 0;
+        max-width: 200px; }
       .featured-speakers-section .card-grid .card .card-title {
         margin-bottom: 4px;
         font-size: 1.2rem;
@@ -7432,21 +7434,17 @@ footer > * {
     color: #f0f0f0;
     text-transform: uppercase;
     text-decoration: underline; }
-  .featured-speakers-section {
-    padding: 0 100px; }
-    .featured-speakers-section .card-grid .card {
-      display: flex;
-      margin: 20px 0px;
-      min-width: 0px;
-      max-width: 250px; }
-      .featured-speakers-section .card-grid .card .card-title {
-        font-size: 1.4rem; }
-      .featured-speakers-section .card-grid .card .card-subtitle {
-        font-size: 0.9rem; }
-      .featured-speakers-section .card-grid .card .card-text {
-        font-size: 0.7rem; }
-      .featured-speakers-section .card-grid .card img {
-        padding: 0; } }
+  .featured-speakers-section .card-grid .card {
+    display: flex;
+    min-width: 0px; }
+    .featured-speakers-section .card-grid .card .card-title {
+      font-size: 1.4rem; }
+    .featured-speakers-section .card-grid .card .card-subtitle {
+      font-size: 0.9rem; }
+    .featured-speakers-section .card-grid .card .card-text {
+      font-size: 0.7rem; }
+    .featured-speakers-section .card-grid .card img {
+      padding: 0; } }
 
 @media screen and (min-width: 1024px) {
   .landing-section {
