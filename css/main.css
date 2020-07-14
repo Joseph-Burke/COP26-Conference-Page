@@ -7286,7 +7286,7 @@ footer {
     grid-auto-rows: 1fr; }
     .main-program-section .card-grid .card {
       margin: 2.5px 0px;
-      background: rgba(255, 255, 255, 0.2); }
+      background: rgba(255, 255, 255, 0.1); }
       .main-program-section .card-grid .card .card-title {
         color: var(--primary);
         font-weight: 700;
@@ -7294,6 +7294,8 @@ footer {
         text-align: center; }
       .main-program-section .card-grid .card .card-text {
         padding: 10px 10px 10px 0px; }
+    .main-program-section .card-grid .card:hover {
+      outline: 1px solid white; }
 
 .partnership-section img {
   width: 100px; }
@@ -7357,35 +7359,47 @@ footer {
 
 @media screen and (min-width: 768px) {
   .landing-section {
-    padding-left: 250px;
-    padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-left: 100px; }
     .landing-section h3 {
-      font-weight: 300;
-      font-size: 4rem;
-      color: var(--primary); }
+      font-size: 2.5rem; }
     .landing-section h1 {
-      font-family: var(--Cocogoose);
-      font-size: 5.5rem;
-      font-weight: 900;
-      width: 700px;
-      margin-top: 15px;
-      color: var(--primary); }
+      font-size: 4rem; }
     .landing-section .intro-box {
-      width: 600px;
+      max-width: 500px;
       padding: 20px;
-      border: 3px solid white;
       font-size: 1.3rem;
-      line-height: 3rem;
+      line-height: 2.5rem;
       font-weight: 500;
       background-color: #f8f8f8;
       color: var(--secondary); }
     .landing-section .dates {
-      margin-top: 40px;
-      font-size: 3rem;
-      font-family: var(--Cocogoose);
-      color: #585858; }
+      font-size: 2.4rem; }
     .landing-section .location {
-      font-size: 2rem;
-      margin-top: 10px;
-      color: #585858; } }
+      font-size: 1.5rem;
+      font-weight: 500; }
+  .main-program-section .card-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    height: max-content; }
+    .main-program-section .card-grid .card {
+      margin: 0px;
+      padding: 10px 5px 5px 5px;
+      align-items: stretch; }
+      .main-program-section .card-grid .card > * {
+        flex: 0 0 auto; }
+      .main-program-section .card-grid .card img {
+        width: 75%;
+        height: auto; }
+      .main-program-section .card-grid .card .card-title {
+        font-size: 1.5rem;
+        margin: 15px 0px 5px; }
+      .main-program-section .card-grid .card .card-text {
+        max-width: 100%;
+        padding: 5px 5px;
+        flex-grow: 1;
+        display: flex; }
+  .main-program-section a {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    text-decoration: underline; } }
