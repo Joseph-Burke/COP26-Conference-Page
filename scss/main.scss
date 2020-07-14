@@ -7,7 +7,6 @@
 // Import multi-page styles from _general-after-bs.scss file
 @import "general-after-bs.scss";
 
-
 .landing-section {
   @extend .landing-section;
   h3 {
@@ -208,58 +207,67 @@
       text-decoration: underline;
     }
   }
+  .featured-speakers-section {
+    padding: 0 100px;
+    .card-grid {
+      .card {
+        display: flex;
+        margin: 20px 0px;
+        min-width: 0px;
+        max-width: 250px;
+        .card-title {
+          font-size: 1.4rem;
+        }
+        .card-subtitle {
+          font-size: 0.9rem;
+        }
+        .card-text {
+          font-size: 0.7rem;
+        }
+        img {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // .landing-section {
-  //   padding-left: 250px;
-  //   padding-top: 100px;
-  //   padding-bottom: 100px;
-  //   h3 {
-  //     font-weight: 300;
-  //     font-size: 4rem;
-  //     color: var(--primary);
-  //   }
-  //   h1 {
-  //     font-family: var(--Cocogoose);
-  //     font-size: 5.5rem;
-  //     font-weight: 900;
-  //     width: 700px;
-  //     margin-top: 15px;
-  //     color: var(--primary);
-  //   }
-  //   .intro-box {
-  //     width: 600px;
-  //     padding: 20px;
-  //     border: 3px solid white;
-  //     font-size: 1.3rem;
-  //     line-height: 3rem;
-  //     font-weight: 500;
-  //     background-color: #f8f8f8;
-  //     color: var(--secondary);
-  //   }
-  //   .dates {
-  //     margin-top: 40px;
-  //     font-size: 3rem;
-  //     font-family: var(--Cocogoose);
-  //     color: #585858;
-  //   }
-  //   .location {
-  //     font-size: 2rem;
-  //     margin-top: 10px;
-  //     color: #585858;
-  //   }
-  // }
-
+// .landing-section {
+//   padding-left: 250px;
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+//   h3 {
+//     font-weight: 300;
+//     font-size: 4rem;
+//     color: var(--primary);
+//   }
+//   h1 {
+//     font-family: var(--Cocogoose);
+//     font-size: 5.5rem;
+//     font-weight: 900;
+//     width: 700px;
+//     margin-top: 15px;
+//     color: var(--primary);
+//   }
+//   .intro-box {
+//     width: 600px;
+//     padding: 20px;
+//     border: 3px solid white;
+//     font-size: 1.3rem;
+//     line-height: 3rem;
+//     font-weight: 500;
+//     background-color: #f8f8f8;
+//     color: var(--secondary);
+//   }
+//   .dates {
+//     margin-top: 40px;
+//     font-size: 3rem;
+//     font-family: var(--Cocogoose);
+//     color: #585858;
+//   }
+//   .location {
+//     font-size: 2rem;
+//     margin-top: 10px;
+//     color: #585858;
+//   }
+// }

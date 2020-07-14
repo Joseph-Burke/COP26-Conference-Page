@@ -25,8 +25,9 @@ header {
   }
 }
 
-footer {
-  padding: 20px;
+footer > * {
+  max-height: 60px;
+  padding: 5px 0px;
 }
 
 .landing-section {
@@ -97,4 +98,11 @@ footer {
   border: none;
   color: #FEFEF9;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+  margin: 20px 0px;
+  font-size: 2rem;
+  }
 }

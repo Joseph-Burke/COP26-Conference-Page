@@ -7199,8 +7199,9 @@ header .navbar {
       margin: 3px 0px;
       background: #535353; }
 
-footer {
-  padding: 20px; }
+footer > * {
+  max-height: 60px;
+  padding: 5px 0px; }
 
 .landing-section {
   background-color: #f8f8f8;
@@ -7261,6 +7262,11 @@ footer {
   border: none;
   color: #FEFEF9;
   font-size: 1.5rem; }
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin: 20px 0px;
+    font-size: 2rem; } }
 
 .landing-section {
   padding: 20px 15px; }
