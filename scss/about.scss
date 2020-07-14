@@ -69,7 +69,33 @@
     }
 }
 
-
 .partnership-section {
     @extend .partnership-section;
+}
+
+@media screen and (min-width: 768px) {
+    .landing-section {
+        h3 {
+            display: none;
+        }
+        h1 {
+            font-size: 3rem;
+            max-width: 400px;
+        }
+        .intro-box {
+            max-width: 650px;
+            font-size: 1.2rem;
+            line-height: 2.4rem;
+        }
+        .general-enquiries {
+            font-size: 1.4rem;
+            margin-top: 15px;
+            margin: 25px 0px;
+            line-height: 2.6rem;
+            i {
+                margin-left: 5px;
+                color: rgba(0,0,0,0.6);
+            }
+        }
+    }
 }

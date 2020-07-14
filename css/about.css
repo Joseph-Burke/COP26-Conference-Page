@@ -7313,3 +7313,22 @@ footer > * {
     background: linear-gradient(rgba(230, 65, 50, 0.75), rgba(230, 65, 50, 0.75)), url(../assets/images/COP24-photo.jpg);
     background-position-x: 55%;
     background-size: cover; }
+
+@media screen and (min-width: 768px) {
+  .landing-section h3 {
+    display: none; }
+  .landing-section h1 {
+    font-size: 3rem;
+    max-width: 400px; }
+  .landing-section .intro-box {
+    max-width: 650px;
+    font-size: 1.2rem;
+    line-height: 2.4rem; }
+  .landing-section .general-enquiries {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin: 25px 0px;
+    line-height: 2.6rem; }
+    .landing-section .general-enquiries i {
+      margin-left: 5px;
+      color: rgba(0, 0, 0, 0.6); } }
