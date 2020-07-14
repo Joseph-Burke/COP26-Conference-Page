@@ -7,12 +7,6 @@
 // Import multi-page styles from _general-after-bs.scss file
 @import "general-after-bs.scss";
 
-header {
-  .navbar {
-    padding-left: 150px;
-  }
-}
-
 .landing-section {
   @extend .landing-section;
   h3 {
@@ -124,11 +118,12 @@ header {
         position: relative;
       }
       .card-body {
-        padding-right: 0;
-        max-width: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 400px;
       }
       .card-title {
-        margin-bottom: 4px;
+        margin-bottom: 3px;
         font-size: 1.2rem;
         font-weight: 600;
         letter-spacing: -0.08rem;
@@ -139,6 +134,18 @@ header {
         color: var(--primary);
         font-style: italic;
         letter-spacing: -0.06rem;
+        margin-bottom: 4px;
+        position: relative;
+      }
+      .card-subtitle::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -2.5px;
+        left: 0;
+        width: 20px;
+        height: 0.1px;
+        background: var(--grey);
       }
       .card-text {
         font-size: 0.6rem;
@@ -229,14 +236,17 @@ header {
       .card {
         display: flex;
         min-width: 0px;
+        .card-body {
+          max-width: 260px;
+        }
         .card-title {
-          font-size: 1.4rem;
+          font-size: 1.6rem;
         }
         .card-subtitle {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
         }
         .card-text {
-          font-size: 0.7rem;
+          font-size: 1rem;
         }
         img {
           padding: 0;
@@ -254,4 +264,14 @@ header {
       font-size: 5.5rem;
     }
   }
+  .featured-speakers-section {
+    .card-grid {
+      max-width: 960px;
+      .card {
+        .card-body {
+          max-width: 360px;
+        }
+      }
+    }
+}
 }

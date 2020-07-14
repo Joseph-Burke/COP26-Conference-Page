@@ -12,7 +12,12 @@ html {
 header {
   .navbar {
     background-color: white;
-    padding: 8px 250px;
+    .navbar-collapse .navbar-nav .active a {
+      color: var(--primary);
+    }
+    .nav-item {
+      font-size: 1.5rem;
+    }
     .navbar-toggler {
       border: none;
       .navbar-toggler-symbol {
@@ -32,7 +37,7 @@ header {
   }
   .dark-banner {
     padding: 8px 250px;
-    background-color: #3E3E3E;
+    background-color: #3e3e3e;
     list-style-type: none;
     align-items: center;
     margin-bottom: 0;
@@ -71,20 +76,20 @@ footer > * {
 }
 
 .landing-text-subtitle {
-    font-weight: 300;
-    font-size: 1.9rem;
-    color: var(--primary);
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: var(--primary);
 }
 
 .landing-page-text-box {
-    padding: 15px 15px;
-    margin: 15px -3px 0px;
-    border: 3px solid white;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-    font-weight: 500;
-    background-color: #f8f8f8;
-    color: var(--secondary);
+  padding: 15px 15px;
+  margin: 15px -3px 0px;
+  border: 3px solid white;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  color: var(--secondary);
 }
 
 .section-title {
@@ -124,13 +129,40 @@ footer > * {
 .primary-button {
   background-color: var(--primary);
   border: none;
-  color: #FEFEF9;
+  color: #fefef9;
   font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .section-title {
-  margin: 20px 0px;
-  font-size: 2.2rem;
+    margin: 20px 0px;
+    font-size: 2.2rem;
+  }
+  header {
+    .navbar {
+      padding: 8px 100px;
+      .navbar-collapse {
+        justify-content: flex-end;
+        padding-right: 100px;
+      }
+    }
+
+    .nav-item {
+      margin: 0px 40px;
+    }
+    .dark-banner {
+      padding: 8px 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    .navbar {
+      padding: 8px 150px;
+    }
+    .dark-banner {
+      padding: 8px 150px;
+    }
   }
 }

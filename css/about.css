@@ -7189,8 +7189,11 @@ html {
   justify-content: center; }
 
 header .navbar {
-  background-color: white;
-  padding: 8px 250px; }
+  background-color: white; }
+  header .navbar .navbar-collapse .navbar-nav .active a {
+    color: var(--primary); }
+  header .navbar .nav-item {
+    font-size: 1.5rem; }
   header .navbar .navbar-toggler {
     border: none; }
     header .navbar .navbar-toggler .navbar-toggler-symbol {
@@ -7289,7 +7292,22 @@ footer > * {
 @media screen and (min-width: 768px) {
   .section-title {
     margin: 20px 0px;
-    font-size: 2.2rem; } }
+    font-size: 2.2rem; }
+  header .navbar {
+    padding: 8px 100px; }
+    header .navbar .navbar-collapse {
+      justify-content: flex-end;
+      padding-right: 100px; }
+  header .nav-item {
+    margin: 0px 40px; }
+  header .dark-banner {
+    padding: 8px 100px; } }
+
+@media screen and (min-width: 1024px) {
+  header .navbar {
+    padding: 8px 150px; }
+  header .dark-banner {
+    padding: 8px 150px; } }
 
 .landing-section {
   padding: 20px 15px; }
