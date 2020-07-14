@@ -106,7 +106,7 @@
     .card {
       max-width: max-content;
       flex-grow: 1;
-      margin: 10px;
+      margin: 5px 0px;
       border: none;
       letter-spacing: -0.05rem;
       img {
@@ -129,7 +129,7 @@
         letter-spacing: -0.08rem;
       }
       .card-subtitle {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         line-height: 1rem;
         color: var(--primary);
         font-style: italic;
@@ -148,7 +148,7 @@
         background: var(--grey);
       }
       .card-text {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
       }
     }
   }
@@ -168,7 +168,29 @@
   @extend .partnership-section;
 }
 
-// Desktop version
+@media screen and (min-width: 425px) {
+  .featured-speakers-section {
+    .card-grid {
+      .card {
+        .card-title {
+          font-size: 1.7rem;
+        }
+        .card-subtitle {
+          font-size: 1.3rem;
+          padding-bottom: 6px;
+          margin-top: 3px;
+          margin-bottom: 6px;
+        }
+        .card-text {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .more-button {
+    font-size: 1.3rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .landing-section {
@@ -270,8 +292,18 @@
       .card {
         .card-body {
           max-width: 360px;
+          font-size: 1.2em;
+        }
+        .card-title {
+          font-size: 1.7rem;
+        }
+        .card-subtitle {
+          font-size: 1.3rem;
+        }
+        .card-text {
+          font-size: 1.2rem;
         }
       }
     }
-}
+  }
 }
