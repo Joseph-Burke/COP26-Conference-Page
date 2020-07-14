@@ -7189,7 +7189,8 @@ html {
   justify-content: center; }
 
 header .navbar {
-  padding: 7px; }
+  background-color: white;
+  padding: 8px 250px; }
   header .navbar .navbar-toggler {
     border: none; }
     header .navbar .navbar-toggler .navbar-toggler-symbol {
@@ -7198,6 +7199,28 @@ header .navbar {
       height: 4px;
       margin: 3px 0px;
       background: #535353; }
+  header .navbar .navbar-brand {
+    height: 50px;
+    width: 50px;
+    background: url(../assets/images/COP26-logo.png);
+    background-size: 207%; }
+
+header .dark-banner {
+  padding: 8px 250px;
+  background-color: #3E3E3E;
+  list-style-type: none;
+  align-items: center;
+  margin-bottom: 0; }
+  header .dark-banner li {
+    margin: 0 10px; }
+    header .dark-banner li .social-media-icon {
+      font-size: 1.5rem; }
+  header .dark-banner .fa-twitter {
+    margin-right: 8px; }
+  header .dark-banner a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300; }
 
 footer > * {
   max-height: 60px;
@@ -7267,32 +7290,6 @@ footer > * {
   .section-title {
     margin: 20px 0px;
     font-size: 2.2rem; } }
-
-header .dark-banner {
-  padding: 8px 250px;
-  background-color: #3E3E3E;
-  list-style-type: none;
-  align-items: center;
-  margin-bottom: 0; }
-  header .dark-banner li {
-    margin: 0 10px; }
-    header .dark-banner li .social-media-icon {
-      font-size: 1.5rem; }
-  header .dark-banner .fa-twitter {
-    margin-right: 8px; }
-  header .dark-banner a {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 300; }
-
-header .navbar {
-  background-color: white;
-  padding: 8px 250px; }
-  header .navbar .navbar-brand {
-    height: 50px;
-    width: 50px;
-    background: url(../assets/images/COP26-logo.png);
-    background-size: 207%; }
 
 .landing-section {
   padding: 20px 15px; }

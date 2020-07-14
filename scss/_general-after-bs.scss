@@ -11,7 +11,8 @@ html {
 
 header {
   .navbar {
-    padding: 7px;
+    background-color: white;
+    padding: 8px 250px;
     .navbar-toggler {
       border: none;
       .navbar-toggler-symbol {
@@ -21,6 +22,33 @@ header {
         margin: 3px 0px;
         background: #535353;
       }
+    }
+    .navbar-brand {
+      height: 50px;
+      width: 50px;
+      background: url(../assets/images/COP26-logo.png);
+      background-size: 207%;
+    }
+  }
+  .dark-banner {
+    padding: 8px 250px;
+    background-color: #3E3E3E;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 0;
+    li {
+      margin: 0 10px;
+      .social-media-icon {
+        font-size: 1.5rem;
+      }
+    }
+    .fa-twitter {
+      margin-right: 8px;
+    }
+    a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300;
     }
   }
 }
