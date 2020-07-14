@@ -9,6 +9,22 @@ html {
   justify-content: center;
 }
 
+header {
+  .navbar {
+    padding: 7px;
+    .navbar-toggler {
+      border: none;
+      .navbar-toggler-symbol {
+        display: block;
+        width: 23px;
+        height: 4px;
+        margin: 3px 0px;
+        background: #535353;
+      }
+    }
+  }
+}
+
 footer {
   padding: 20px;
 }

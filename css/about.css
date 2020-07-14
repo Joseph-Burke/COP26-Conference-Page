@@ -7188,6 +7188,17 @@ html {
   align-items: center;
   justify-content: center; }
 
+header .navbar {
+  padding: 7px; }
+  header .navbar .navbar-toggler {
+    border: none; }
+    header .navbar .navbar-toggler .navbar-toggler-symbol {
+      display: block;
+      width: 23px;
+      height: 4px;
+      margin: 3px 0px;
+      background: #535353; }
+
 footer {
   padding: 20px; }
 
@@ -7244,6 +7255,12 @@ footer {
     margin: -5px 15px;
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
+
+.primary-button {
+  background-color: var(--primary);
+  border: none;
+  color: #FEFEF9;
+  font-size: 1.5rem; }
 
 .landing-section {
   padding: 20px 15px; }

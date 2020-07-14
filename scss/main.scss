@@ -7,6 +7,7 @@
 // Import multi-page styles from _general-after-bs.scss file
 @import "general-after-bs.scss";
 
+
 .landing-section {
   @extend .landing-section;
   h3 {
@@ -33,32 +34,32 @@
 }
 
 .main-program-section {
-    color: #FEFEF9;
-    padding-top: 20px;
-    background-image: url(../assets/images/background-2.png);
-    background-size: 25px 25px;
-    background-repeat: repeat;
-    .card-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr;
-        .card {
-            margin: 2.5px 0px;
-            background: rgba(255, 255, 255, 0.2);
-            .card-title {
-                color: var(--primary);
-                font-weight: 700;
-                padding: 0;
-                text-align: center;
-            }
-            .card-text {
-                padding: 10px 10px 10px 0px;
-            }
-        }
+  color: #fefef9;
+  padding-top: 20px;
+  background-image: url(../assets/images/background-2.png);
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    .card {
+      margin: 2.5px 0px;
+      background: rgba(255, 255, 255, 0.2);
+      .card-title {
+        color: var(--primary);
+        font-weight: 700;
+        padding: 0;
+        text-align: center;
+      }
+      .card-text {
+        padding: 10px 10px 10px 0px;
+      }
     }
-    button {
-      @extend .primary-button;
-    }
+  }
+  button {
+    @extend .primary-button;
+  }
 }
 
 .partnership-section {
@@ -76,43 +77,62 @@
   .card-grid {
     display: flex;
     flex-wrap: wrap;
-        .card {
-        width: 50%;
-        min-width: 300px;
-        flex-grow: 1;
-        margin: 5px 0px;
-        border: none;
-        letter-spacing: -0.05rem;
-        .card-body {
-          padding-right: 0;
-        }
-        .card-title {
-          margin-bottom: 4px;
-          font-size: 1.2rem;
-          font-weight: 600;
-          letter-spacing: -0.08rem;
-        }
-        .card-subtitle {
-          font-size: 0.7rem;
-          line-height: 1rem;
-          color: var(--primary);
-          font-style: italic;
-          letter-spacing: -0.06rem;
-        }
-        .card-text {
-          font-size: 0.6rem;
-        }
+    .card::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12%;
+      height: 44%;
+      background: url(../assets/images/checkered-black-and-white.jpg);
+      background-size: 40px;
+    }
+    .card {
+      width: 50%;
+      min-width: 300px;
+      flex-grow: 1;
+      margin: 10px 0px;
+      border: none;
+      letter-spacing: -0.05rem;
+      img {
+        width: 50px;
+        height: auto;
+        padding-top: 9px;
+        padding-left: 9px;
+        padding-right: 0;
+        position: relative;
+      }
+      .card-body {
+        padding-right: 0;
+      }
+      .card-title {
+        margin-bottom: 4px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: -0.08rem;
+      }
+      .card-subtitle {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        color: var(--primary);
+        font-style: italic;
+        letter-spacing: -0.06rem;
+      }
+      .card-text {
+        font-size: 0.6rem;
+      }
     }
   }
-  .more-button {
-    align-self: stretch;
-    font-size: 0.8rem;
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 2px;
-    margin: 20px 0px;
-    .fa-chevron-down {
-      color: var(--primary);
-    }
+}
+.more-button {
+  align-self: stretch;
+  font-size: 0.8rem;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 2px;
+  margin: 20px 0px;
+  .fa-chevron-down {
+    color: var(--primary);
   }
 }
 

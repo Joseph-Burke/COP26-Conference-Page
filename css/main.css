@@ -7188,6 +7188,17 @@ html {
   align-items: center;
   justify-content: center; }
 
+header .navbar {
+  padding: 7px; }
+  header .navbar .navbar-toggler {
+    border: none; }
+    header .navbar .navbar-toggler .navbar-toggler-symbol {
+      display: block;
+      width: 23px;
+      height: 4px;
+      margin: 3px 0px;
+      background: #535353; }
+
 footer {
   padding: 20px; }
 
@@ -7264,7 +7275,7 @@ footer {
   color: #585858; }
 
 .main-program-section {
-  color: #FEFEF9;
+  color: #fefef9;
   padding-top: 20px;
   background-image: url(../assets/images/background-2.png);
   background-size: 25px 25px;
@@ -7295,13 +7306,30 @@ footer {
   .featured-speakers-section .card-grid {
     display: flex;
     flex-wrap: wrap; }
+    .featured-speakers-section .card-grid .card::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12%;
+      height: 44%;
+      background: url(../assets/images/checkered-black-and-white.jpg);
+      background-size: 40px; }
     .featured-speakers-section .card-grid .card {
       width: 50%;
       min-width: 300px;
       flex-grow: 1;
-      margin: 5px 0px;
+      margin: 10px 0px;
       border: none;
       letter-spacing: -0.05rem; }
+      .featured-speakers-section .card-grid .card img {
+        width: 50px;
+        height: auto;
+        padding-top: 9px;
+        padding-left: 9px;
+        padding-right: 0;
+        position: relative; }
       .featured-speakers-section .card-grid .card .card-body {
         padding-right: 0; }
       .featured-speakers-section .card-grid .card .card-title {
@@ -7317,14 +7345,15 @@ footer {
         letter-spacing: -0.06rem; }
       .featured-speakers-section .card-grid .card .card-text {
         font-size: 0.6rem; }
-  .featured-speakers-section .more-button {
-    align-self: stretch;
-    font-size: 0.8rem;
-    border: 1px solid #dadada;
-    border-radius: 2px;
-    margin: 20px 0px; }
-    .featured-speakers-section .more-button .fa-chevron-down {
-      color: var(--primary); }
+
+.more-button {
+  align-self: stretch;
+  font-size: 0.8rem;
+  border: 1px solid #dadada;
+  border-radius: 2px;
+  margin: 20px 0px; }
+  .more-button .fa-chevron-down {
+    color: var(--primary); }
 
 @media screen and (min-width: 768px) {
   .landing-section {
