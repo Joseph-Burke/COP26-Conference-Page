@@ -7271,15 +7271,20 @@ footer > * {
 
 .partnership-section {
   background-color: #414246;
-  padding: 10px; }
+  padding: 10px 10px 30px 10px; }
   .partnership-section h3 {
     margin: 10px 0px;
     color: #f1f1f1;
     font-size: 1.5rem; }
+  .partnership-section .fb-svg {
+    position: relative;
+    width: 50px;
+    bottom: 5px;
+    right: 5px; }
   .partnership-section svg {
     width: 60px;
     height: auto;
-    margin: -5px 15px;
+    margin: 0px 10px;
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
 
@@ -7292,7 +7297,9 @@ footer > * {
 @media screen and (min-width: 425px) {
   section .section-title,
   .featured-speakers-section .section-title {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .partnership-section svg {
+    margin: 0px 10px; } }
 
 @media screen and (min-width: 768px) {
   .section-title {
