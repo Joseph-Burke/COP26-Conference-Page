@@ -7206,39 +7206,44 @@ html {
 
 header .navbar {
   background-color: white; }
-  header .navbar .dark-banner {
-    padding: 8px 250px;
-    background-color: #3e3e3e;
-    list-style-type: none;
-    align-items: center;
-    margin-bottom: 0; }
-    header .navbar .dark-banner li {
-      margin: 0 10px; }
-      header .navbar .dark-banner li .social-media-icon {
-        font-size: 1.5rem; }
-    header .navbar .dark-banner .fa-twitter {
-      margin-right: 8px; }
-    header .navbar .dark-banner a {
-      color: white;
-      font-size: 1.2rem;
-      font-weight: 300; }
-  header .navbar .navbar-collapse .navbar-nav .active a {
-    color: var(--primary); }
-  header .navbar .nav-item {
-    font-size: 1.5rem; }
-  header .navbar .navbar-toggler {
-    border: none; }
-    header .navbar .navbar-toggler .navbar-toggler-symbol {
-      display: block;
-      width: 23px;
-      height: 4px;
-      margin: 3px 0;
-      background: #535353; }
-  header .navbar .navbar-brand {
-    height: 50px;
-    width: 50px;
-    background: url(../assets/images/COP26-logo.png);
-    background-size: 207%; }
+
+header .dark-banner {
+  padding: 8px 250px;
+  background-color: #3e3e3e;
+  list-style-type: none;
+  align-items: center;
+  margin-bottom: 0; }
+  header .dark-banner li {
+    margin: 0 10px; }
+    header .dark-banner li .social-media-icon {
+      font-size: 1.5rem; }
+  header .dark-banner .fa-twitter {
+    margin-right: 8px; }
+  header .dark-banner a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300; }
+
+header .navbar-collapse .navbar-nav .active a {
+  color: var(--primary); }
+
+header .nav-item {
+  font-size: 1.5rem; }
+
+header .navbar-toggler {
+  border: none; }
+  header .navbar-toggler .navbar-toggler-symbol {
+    display: block;
+    width: 23px;
+    height: 4px;
+    margin: 3px 0;
+    background: #535353; }
+
+header .navbar-brand {
+  height: 50px;
+  width: 50px;
+  background: url(../assets/images/COP26-logo.png);
+  background-size: 207%; }
 
 footer > * {
   max-height: 60px;

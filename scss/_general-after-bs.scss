@@ -12,59 +12,59 @@ html {
 header {
   .navbar {
     background-color: white;
+  }
 
-    .dark-banner {
-      padding: 8px 250px;
-      background-color: #3e3e3e;
-      list-style-type: none;
-      align-items: center;
-      margin-bottom: 0;
+  .dark-banner {
+    padding: 8px 250px;
+    background-color: #3e3e3e;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 0;
 
-      li {
-        margin: 0 10px;
+    li {
+      margin: 0 10px;
 
-        .social-media-icon {
-          font-size: 1.5rem;
-        }
-      }
-
-      .fa-twitter {
-        margin-right: 8px;
-      }
-
-      a {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 300;
+      .social-media-icon {
+        font-size: 1.5rem;
       }
     }
-    
-    .navbar-collapse .navbar-nav .active a {
-      color: var(--primary);
+
+    .fa-twitter {
+      margin-right: 8px;
     }
 
-    .nav-item {
-      font-size: 1.5rem;
+    a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300;
     }
+  }
 
-    .navbar-toggler {
-      border: none;
+  .navbar-collapse .navbar-nav .active a {
+    color: var(--primary);
+  }
 
-      .navbar-toggler-symbol {
-        display: block;
-        width: 23px;
-        height: 4px;
-        margin: 3px 0;
-        background: #535353;
-      }
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    .navbar-toggler-symbol {
+      display: block;
+      width: 23px;
+      height: 4px;
+      margin: 3px 0;
+      background: #535353;
     }
-    
-    .navbar-brand {
-      height: 50px;
-      width: 50px;
-      background: url(../assets/images/COP26-logo.png);
-      background-size: 207%;
-    }
+  }
+
+  .navbar-brand {
+    height: 50px;
+    width: 50px;
+    background: url(../assets/images/COP26-logo.png);
+    background-size: 207%;
   }
 }
 
@@ -122,20 +122,20 @@ footer > * {
 .partnership-section {
   background-color: #414246;
   padding: 10px 10px 30px 10px;
-  
+
   h3 {
     margin: 10px 0;
     color: #f1f1f1;
     font-size: 1.5rem;
   }
-  
+
   .fb-svg {
     position: relative;
     width: 50px;
     bottom: 5px;
     right: 5px;
   }
-  
+
   svg {
     width: 60px;
     height: auto;
@@ -172,22 +172,22 @@ footer > * {
   header {
     .navbar {
       padding: 8px 100px;
-      
+
       .navbar-collapse {
         justify-content: flex-end;
         padding-right: 100px;
       }
     }
-    
+
     .nav-item {
       margin: 0 40px;
     }
-    
+
     .dark-banner {
       padding: 8px 100px;
     }
   }
-  
+
   footer > * {
     max-height: 80px;
   }
@@ -198,7 +198,7 @@ footer > * {
     .navbar {
       padding: 8px 150px;
     }
-    
+
     .dark-banner {
       padding: 8px 150px;
     }
