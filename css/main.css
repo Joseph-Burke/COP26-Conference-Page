@@ -7313,7 +7313,9 @@ footer > * {
   header .nav-item {
     margin: 0px 40px; }
   header .dark-banner {
-    padding: 8px 100px; } }
+    padding: 8px 100px; }
+  footer > * {
+    max-height: 80px; } }
 
 @media screen and (min-width: 1024px) {
   header .navbar {
@@ -7416,7 +7418,7 @@ footer > * {
         letter-spacing: -0.08rem; }
       .featured-speakers-section .card-grid .card .card-subtitle {
         font-size: 0.9rem;
-        line-height: 1rem;
+        line-height: 1.4rem;
         color: var(--primary);
         font-style: italic;
         letter-spacing: -0.06rem;
