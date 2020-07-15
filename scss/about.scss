@@ -7,15 +7,14 @@
 // Import multi-page styles from _general-after-bs.scss file
 @import "general-after-bs.scss";
 
-
 .landing-section {
   @extend .landing-section;
-  
+
   padding: 20px 15px;
-  
+
   h3 {
     @extend .landing-text-subtitle;
-    
+
     margin-bottom: 15px;
   }
   
@@ -38,7 +37,7 @@
   }
   
   .general-enquiries {
-    margin: 10px 0px;
+    margin: 10px 0;
     color: var(--gray-dark);
     
     a {
@@ -80,21 +79,23 @@
     }
     
     .card-1 {
-      background: 
-      linear-gradient(
-        rgba(230, 65, 50, 0.75),
-        rgba(230, 65, 50, 0.75)),
+      background:
+        linear-gradient(
+          rgba(230, 65, 50, 0.75),
+          rgba(230, 65, 50, 0.75)
+        ),
       url(../assets/images/cop25-leaders-photo.jpg);
       background-position-x: 50%;
       background-size: cover;
     }
 
     .card-2 {
-      background: 
-      linear-gradient(
-        rgba(230, 65, 50, 0.75),
-        rgba(230, 65, 50, 0.75)),
-      url(../assets/images/COP24-photo.jpg);
+      background:
+        linear-gradient(
+          rgba(230, 65, 50, 0.75),
+          rgba(230, 65, 50, 0.75)
+        ),
+        url(../assets/images/COP24-photo.jpg);
       background-position-x: 55%;
       background-size: cover;
     }
@@ -136,8 +137,8 @@
     
     .general-enquiries {
       font-size: 1.5rem;
-      margin-top: 15px;
       margin: 25px 0;
+      margin-top: 15px;
       line-height: 2.6rem;
       
       i {
@@ -157,9 +158,9 @@
     }
     
     img {
-        width: 400px;
-        height: 200px;
-        padding: 20px;
+      width: 400px;
+      height: 200px;
+      padding: 20px;
     }
   }
   

@@ -8,10 +8,26 @@
 
 :root {
   --Cocogoose: 
-  cocogoose, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
-  --Lato: 
-  lato, blinkmacaystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", 
-  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    cocogoose,
+    menlo,
+    monaco,
+    consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
+  --Lato:
+    lato,
+    blinkmacaystemfont,
+    "Segoe UI",
+    roboto,
+    "Helvetica Neue",
+    arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   --grey: #d3d3d3;
   --primary: #ec5242;
   --secondary: #272a31; }
@@ -7272,7 +7288,7 @@ footer > * {
   background-color: #414246;
   padding: 10px 10px 30px 10px; }
   .partnership-section h3 {
-    margin: 10px 0px;
+    margin: 10px 0;
     color: #f1f1f1;
     font-size: 1.5rem; }
   .partnership-section .fb-svg {
@@ -7340,7 +7356,7 @@ footer > * {
     font-size: 1.2rem;
     margin-top: 20px; }
   .landing-section .general-enquiries {
-    margin: 10px 0px;
+    margin: 10px 0;
     color: var(--gray-dark); }
     .landing-section .general-enquiries a {
       text-decoration: underline;
@@ -7399,8 +7415,8 @@ footer > * {
     line-height: 2.4rem; }
   .landing-section .general-enquiries {
     font-size: 1.5rem;
-    margin-top: 15px;
     margin: 25px 0;
+    margin-top: 15px;
     line-height: 2.6rem; }
     .landing-section .general-enquiries i {
       margin-left: 5px;
