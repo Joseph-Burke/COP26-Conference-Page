@@ -2,7 +2,7 @@
 
 > This project is a website for the United Nations Climate Conference taking place in Glasgow in November 2021.
 
-![screenshot](assets/images/main-page-preview.png)
+![screenshot](assets/images/main-page-screen-mockup.png)
 
 I was given [this design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) of [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)'s to follow, mirroring its structure, typography and colors as I built my own conference website.
 
@@ -10,7 +10,7 @@ After some cursory research, I discovered that the next UN "Conference of the Pa
 
 ## Video Presentation
 
-View my video [presentation](https://www.loom.com/share/514053e38f0c48ba83010316a8c5b399) of the project to hear more about this assignment and how I approached it.
+Watch my video [presentation](https://www.loom.com/share/514053e38f0c48ba83010316a8c5b399) of the project to hear more about this assignment and how I approached it.
 
 ## Built With
 
@@ -78,9 +78,10 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 ## Acknowledgments
 
 - Thanks are owed to the designer, [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), for her design.
-- Content was largely inspired by [this](https://www.worldclimatesummit.org/copy-of-speakers-2019-1) website, which lists speakers at the Investment COP on the 7th-8th November 2021. The text has been adapted and the names have been changed.
+- Thanks to [techsini.com](https://techsini.com/multi-mockup/) for their useful URL-based website mockup tool.
+- Content was largely inspired by [this](https://www.worldclimatesummit.org/copy-of-speakers-2019-1) website, which lists speakers at the Investment COP in Glasgow on the 7th-8th November 2021. The text has been adapted and the names have been changed.
 - Headshots of fictional guest speakers were taken from [this](https://www.worldclimatesummit.org/copy-of-speakers-2019-1) website.
-- Speaker names were adapted from the names of the members of my Stand-Up Team: Amita, Oyeleke, Brandon, Robert, Sercan and myself.
+- Speaker names were adapted from the names of the members of my Stand-Up Team: Amita, Oyeleke, Brandon, Robert, Sercan and myself. As always, thanks go to them for their feedback and support.
 - Icons were taken from www.flaticon.com with the request that they be attributed to their creators:
 <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
