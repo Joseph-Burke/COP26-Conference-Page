@@ -7381,8 +7381,8 @@ footer > * {
     display: none; }
   .landing-section h1 {
     position: relative;
-    font-size: 3rem;
-    max-width: 400px; }
+    font-size: 4rem;
+    max-width: 500px; }
   .landing-section h1::after {
     content: "";
     display: block;
@@ -7394,10 +7394,10 @@ footer > * {
     background-color: var(--primary); }
   .landing-section .intro-box {
     max-width: 650px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2.4rem; }
   .landing-section .general-enquiries {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 15px;
     margin: 25px 0px;
     line-height: 2.6rem; }
@@ -7408,13 +7408,15 @@ footer > * {
     border-top: 2px solid #ededed;
     border-bottom: 2px solid #ededed; }
     .logo-section .logo-info {
-      font-size: 1.2rem; }
+      font-size: 1.4rem;
+      max-width: 500px; }
     .logo-section img {
       width: 400px;
       height: 200px;
       padding: 20px; }
   .past-conferences-section .section-text {
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
   .past-conferences-section .card-grid {
     margin-top: 30px;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px;
+    font-size: 1.4rem; } }
