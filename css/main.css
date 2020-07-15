@@ -7508,7 +7508,7 @@ footer > * {
         height: auto; }
       .main-program-section .card-grid .card .card-title {
         font-size: 1.5rem;
-        margin: 15px 0px 5px; }
+        margin: 15px 0 5px; }
       .main-program-section .card-grid .card .card-text {
         max-width: 100%;
         padding: 5px 5px;
@@ -7551,12 +7551,12 @@ footer > * {
       font-size: 5.5rem; }
   .featured-speakers-section .card-grid {
     max-width: 960px; }
-    .featured-speakers-section .card-grid .card .card-body {
+    .featured-speakers-section .card-grid .card-body {
       max-width: 350px;
       font-size: 1.2em; }
-    .featured-speakers-section .card-grid .card .card-title {
+    .featured-speakers-section .card-grid .card-title {
       font-size: 1.7rem; }
-    .featured-speakers-section .card-grid .card .card-subtitle {
+    .featured-speakers-section .card-grid .card-subtitle {
       font-size: 1.3rem; }
-    .featured-speakers-section .card-grid .card .card-text {
+    .featured-speakers-section .card-grid .card-text {
       font-size: 1.2rem; } }

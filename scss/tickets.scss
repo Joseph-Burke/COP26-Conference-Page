@@ -16,7 +16,7 @@ form {
   section {
     padding: 15px 0px;
   }
-
+  
   .instructions {
     display: flex;
     max-width: 400px;
@@ -25,7 +25,7 @@ form {
     border: 1px solid var(--dark);
     border-radius: 50px;
     text-align: left;
-
+    
     .step {
       white-space: nowrap;
       align-self: center;
@@ -33,7 +33,7 @@ form {
       font-weight: 600;
     }
   }
-
+  
   .tickets-section {
     position: relative;
     background-color: rgb(247, 247, 247);
@@ -70,21 +70,21 @@ form {
       text-align: center;
       border: 5px solid transparent;
       background: 
-      repeating-linear-gradient(
-        135deg,
-        #f93927,
-        #f93927 5px,
-        #f6f1f4 5px,
-        #f6f1f4 10px,
-        #1a2e5e 10px,
-        #1a2e5e 15px,
-        #f6f1f4 15px,
-        #f6f1f4 20px
-      );
-      
-      .student-row,
-      .normal-row {
-        td {
+        repeating-linear-gradient(
+          135deg,
+          #f93927,
+          #f93927 5px,
+          #f6f1f4 5px,
+          #f6f1f4 10px,
+          #1a2e5e 10px,
+          #1a2e5e 15px,
+          #f6f1f4 15px,
+          #f6f1f4 20px
+        );
+        
+        .student-row,
+        .normal-row {
+          td {
           font-weight: 700;
           color: var(--primary);
         }
@@ -115,13 +115,13 @@ form {
 .food-section {
   background-color: rgb(254, 254, 254);
   
-  fieldset {
+fieldset {
     border: 1px solid var(--dark);
     margin: 10px 0px;
     position: relative;
   }
   
-  header {
+header {
     background: #f6f6f6;
     color: #585858;
     font-size: 1.3rem;
@@ -129,7 +129,7 @@ form {
     padding: 5px 0px;
   }
   
-  ul {
+ul {
     justify-content: space-evenly;
     align-items: center;
     margin: 6px 0px;
@@ -147,6 +147,7 @@ form {
   
   button {
     @extend .primary-button;
+    
     font-size: 1.2rem;
     margin-top: 10px;
   }
@@ -188,7 +189,7 @@ form {
       }
       
       button {
-          font-size: 2rem;
+        font-size: 2rem;
       }
     }
   }
