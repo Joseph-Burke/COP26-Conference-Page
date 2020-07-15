@@ -133,6 +133,13 @@ footer > * {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 425px) {
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-title {
     margin: 20px 0px;
@@ -164,5 +171,9 @@ footer > * {
     .dark-banner {
       padding: 8px 150px;
     }
+  }
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 2rem;
   }
 }

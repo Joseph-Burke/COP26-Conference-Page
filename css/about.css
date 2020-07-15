@@ -7210,7 +7210,7 @@ header .navbar {
 
 header .dark-banner {
   padding: 8px 250px;
-  background-color: #3E3E3E;
+  background-color: #3e3e3e;
   list-style-type: none;
   align-items: center;
   margin-bottom: 0; }
@@ -7286,8 +7286,13 @@ footer > * {
 .primary-button {
   background-color: var(--primary);
   border: none;
-  color: #FEFEF9;
+  color: #fefef9;
   font-size: 1.5rem; }
+
+@media screen and (min-width: 425px) {
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 1.8rem; } }
 
 @media screen and (min-width: 768px) {
   .section-title {
@@ -7307,7 +7312,10 @@ footer > * {
   header .navbar {
     padding: 8px 150px; }
   header .dark-banner {
-    padding: 8px 150px; } }
+    padding: 8px 150px; }
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 2rem; } }
 
 .landing-section {
   padding: 20px 15px; }

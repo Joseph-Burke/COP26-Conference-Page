@@ -7289,6 +7289,11 @@ footer > * {
   color: #fefef9;
   font-size: 1.5rem; }
 
+@media screen and (min-width: 425px) {
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 1.8rem; } }
+
 @media screen and (min-width: 768px) {
   .section-title {
     margin: 20px 0px;
@@ -7307,7 +7312,10 @@ footer > * {
   header .navbar {
     padding: 8px 150px; }
   header .dark-banner {
-    padding: 8px 150px; } }
+    padding: 8px 150px; }
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 2rem; } }
 
 .landing-section .dates {
   margin-top: 30px;
@@ -7365,14 +7373,16 @@ footer > * {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 700px; }
-    .featured-speakers-section .card-grid .card::before {
+    .featured-speakers-section .card-grid .img-wrapper {
+      position: relative; }
+    .featured-speakers-section .card-grid .img-wrapper::before {
       content: "";
       display: block;
       position: absolute;
       top: 0;
       left: 0;
-      width: 12%;
-      height: 44%;
+      width: 30px;
+      height: 30px;
       background: url(../assets/images/checkered-black-and-white.jpg);
       background-size: 40px; }
     .featured-speakers-section .card-grid .card {
@@ -7489,7 +7499,7 @@ footer > * {
     display: flex;
     min-width: 0px; }
     .featured-speakers-section .card-grid .card .card-body {
-      max-width: 260px; }
+      max-width: 230px; }
     .featured-speakers-section .card-grid .card .card-title {
       font-size: 1.6rem; }
     .featured-speakers-section .card-grid .card .card-subtitle {
@@ -7498,7 +7508,17 @@ footer > * {
       font-size: 1rem; }
     .featured-speakers-section .card-grid .card img {
       padding: 0;
-      max-width: 100px; } }
+      max-width: 100px; }
+    .featured-speakers-section .card-grid .card .img-wrapper::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 30px;
+      height: 30px;
+      background: url(../assets/images/checkered-black-and-white.jpg);
+      background-size: 40px; } }
 
 @media screen and (min-width: 1024px) {
   .landing-section {
@@ -7508,7 +7528,7 @@ footer > * {
   .featured-speakers-section .card-grid {
     max-width: 960px; }
     .featured-speakers-section .card-grid .card .card-body {
-      max-width: 360px;
+      max-width: 350px;
       font-size: 1.2em; }
     .featured-speakers-section .card-grid .card .card-title {
       font-size: 1.7rem; }
