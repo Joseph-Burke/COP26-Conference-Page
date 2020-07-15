@@ -70,9 +70,21 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 
 ## Acknowledgments
 
-- Thanks are owed to the designer, 
-- Inspiration
-- etc
+- Thanks are owed to the designer, [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), for her design.
+- Content was largely inspired by [this](https://www.worldclimatesummit.org/copy-of-speakers-2019-1) website, which lists speakers at the Investment COP on the 7th-8th November 2021. The text has been adapted and the names have been changed.
+- Headshots of fictional guest speakers were taken from [this](https://www.worldclimatesummit.org/copy-of-speakers-2019-1) website.
+- Speaker names were adapted from the names of the members of my Stand-Up Team: Amita, Oyeleke, Brandon, Robert, Sercan and myself.
+- Icons were taken from www.flaticon.com with the request that they be attributed to their creators:
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a
+        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a
+        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 ## 📝 License
 
