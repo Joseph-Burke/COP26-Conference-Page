@@ -7357,7 +7357,7 @@ footer > * {
 .past-conferences-section {
   padding: 10px 20px; }
   .past-conferences-section .card-grid {
-    max-width: 600px;
+    max-width: 800px;
     margin-bottom: 20px; }
     .past-conferences-section .card-grid .card {
       flex-grow: 1;
