@@ -14,31 +14,31 @@ header {
     background-color: white;
 
     .dark-banner {
-    padding: 8px 250px;
-    background-color: #3e3e3e;
-    list-style-type: none;
-    align-items: center;
-    margin-bottom: 0;
-    
-    li {
-      margin: 0 10px;
-      
-      .social-media-icon {
-        font-size: 1.5rem;
+      padding: 8px 250px;
+      background-color: #3e3e3e;
+      list-style-type: none;
+      align-items: center;
+      margin-bottom: 0;
+
+      li {
+        margin: 0 10px;
+
+        .social-media-icon {
+          font-size: 1.5rem;
+        }
+      }
+
+      .fa-twitter {
+        margin-right: 8px;
+      }
+
+      a {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 300;
       }
     }
     
-    .fa-twitter {
-      margin-right: 8px;
-    }
-    
-    a {
-      color: white;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-  }
- 
     .navbar-collapse .navbar-nav .active a {
       color: var(--primary);
     }
@@ -124,7 +124,7 @@ footer > * {
   padding: 10px 10px 30px 10px;
   
   h3 {
-    margin: 10px 0px;
+    margin: 10px 0;
     color: #f1f1f1;
     font-size: 1.5rem;
   }
@@ -157,6 +157,7 @@ footer > * {
   .featured-speakers-section .section-title {
     font-size: 1.8rem;
   }
+
   .partnership-section svg {
     margin: 0 10px;
   }
