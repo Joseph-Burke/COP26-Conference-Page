@@ -7,11 +7,11 @@
   src: url("../assets/fonts/lato-regular.ttf"); }
 
 :root {
-  --Cocogoose: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --Lato: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  --Cocogoose: 
+  cocogoose, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+  --Lato: 
+  lato, blinkmacaystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", 
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --grey: #d3d3d3;
   --primary: #ec5242;
   --secondary: #272a31; }
@@ -49,8 +49,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-sans-serif: lato, blinkmacaystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: cocogoose, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
 *::before,
@@ -68,7 +68,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: lato, blinkmacaystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -166,7 +166,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: cocogoose, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
 
 pre {
@@ -4295,7 +4295,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: lato, blinkmacaystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4380,7 +4380,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: lato, blinkmacaystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6952,7 +6952,7 @@ button.bg-dark:focus {
   background-color: rgba(0, 0, 0, 0); }
 
 .text-monospace {
-  font-family: Cocogoose, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
+  font-family: cocogoose, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !important; }
 
 .text-justify {
   text-align: justify !important; }
@@ -7190,6 +7190,22 @@ html {
 
 header .navbar {
   background-color: white; }
+  header .navbar .dark-banner {
+    padding: 8px 250px;
+    background-color: #3e3e3e;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 0; }
+    header .navbar .dark-banner li {
+      margin: 0 10px; }
+      header .navbar .dark-banner li .social-media-icon {
+        font-size: 1.5rem; }
+    header .navbar .dark-banner .fa-twitter {
+      margin-right: 8px; }
+    header .navbar .dark-banner a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300; }
   header .navbar .navbar-collapse .navbar-nav .active a {
     color: var(--primary); }
   header .navbar .nav-item {
@@ -7200,7 +7216,7 @@ header .navbar {
       display: block;
       width: 23px;
       height: 4px;
-      margin: 3px 0px;
+      margin: 3px 0;
       background: #535353; }
   header .navbar .navbar-brand {
     height: 50px;
@@ -7208,26 +7224,9 @@ header .navbar {
     background: url(../assets/images/COP26-logo.png);
     background-size: 207%; }
 
-header .dark-banner {
-  padding: 8px 250px;
-  background-color: #3e3e3e;
-  list-style-type: none;
-  align-items: center;
-  margin-bottom: 0; }
-  header .dark-banner li {
-    margin: 0 10px; }
-    header .dark-banner li .social-media-icon {
-      font-size: 1.5rem; }
-  header .dark-banner .fa-twitter {
-    margin-right: 8px; }
-  header .dark-banner a {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 300; }
-
 footer > * {
   max-height: 60px;
-  padding: 10px 0px; }
+  padding: 10px 0; }
 
 .landing-section {
   background-color: #f8f8f8;
@@ -7246,7 +7245,7 @@ footer > * {
 
 .landing-page-text-box, .landing-section .intro-box {
   padding: 15px 15px;
-  margin: 15px -3px 0px;
+  margin: 15px -3px 0;
   border: 3px solid white;
   font-size: 1.3rem;
   line-height: 2.5rem;
@@ -7255,7 +7254,7 @@ footer > * {
   color: var(--secondary); }
 
 .section-title {
-  margin: 15px 0px;
+  margin: 15px 0;
   font-size: 1.6rem;
   position: relative; }
 
@@ -7284,7 +7283,7 @@ footer > * {
   .partnership-section svg {
     width: 60px;
     height: auto;
-    margin: 0px 10px;
+    margin: 0 10px;
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
 
@@ -7299,11 +7298,11 @@ footer > * {
   .featured-speakers-section .section-title {
     font-size: 1.8rem; }
   .partnership-section svg {
-    margin: 0px 10px; } }
+    margin: 0 10px; } }
 
 @media screen and (min-width: 768px) {
   .section-title {
-    margin: 20px 0px;
+    margin: 20px 0;
     font-size: 2.2rem; }
   header .navbar {
     padding: 8px 100px; }
@@ -7311,7 +7310,7 @@ footer > * {
       justify-content: flex-end;
       padding-right: 100px; }
   header .nav-item {
-    margin: 0px 40px; }
+    margin: 0 40px; }
   header .dark-banner {
     padding: 8px 100px; }
   footer > * {
@@ -7361,7 +7360,7 @@ footer > * {
         padding: 0;
         text-align: center; }
       .main-program-section .card-grid .card .card-text {
-        padding: 10px 10px 10px 0px; }
+        padding: 10px 10px 10px 0; }
     .main-program-section .card-grid .card:hover {
       outline: 1px solid white; }
   .main-program-section .agenda-link {
@@ -7441,7 +7440,7 @@ footer > * {
   font-size: 0.8rem;
   border: 1px solid #dadada;
   border-radius: 2px;
-  margin: 20px 0px; }
+  margin: 20px 0; }
   .more-button .fa-chevron-down {
     color: var(--primary); }
 
@@ -7483,7 +7482,7 @@ footer > * {
     grid-template-rows: 1fr;
     height: max-content; }
     .main-program-section .card-grid .card {
-      margin: 0px;
+      margin: 0;
       padding: 10px 5px 5px 5px;
       align-items: stretch; }
       .main-program-section .card-grid .card > * {
@@ -7506,7 +7505,7 @@ footer > * {
     text-decoration: underline; }
   .featured-speakers-section .card-grid .card {
     display: flex;
-    min-width: 0px; }
+    min-width: 0; }
     .featured-speakers-section .card-grid .card .card-body {
       max-width: 230px; }
     .featured-speakers-section .card-grid .card .card-title {
