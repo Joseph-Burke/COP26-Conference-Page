@@ -7353,37 +7353,6 @@ footer > * {
   margin-top: 10px;
   color: #585858; }
 
-.main-program-section {
-  color: #fefef9;
-  padding-top: 20px;
-  background-image: url(../assets/images/background-2.png);
-  background-size: 25px 25px;
-  background-repeat: repeat; }
-  .main-program-section .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr; }
-    .main-program-section .card-grid .card {
-      margin: 2.5px 0;
-      background: rgba(255, 255, 255, 0.1); }
-      .main-program-section .card-grid .card img {
-        padding-left: 7px;
-        padding-right: 6px;
-        max-width: 60px; }
-      .main-program-section .card-grid .card .card-title {
-        color: var(--primary);
-        font-weight: 700;
-        padding: 0;
-        text-align: center; }
-      .main-program-section .card-grid .card .card-text {
-        padding: 10px 10px 10px 0; }
-    .main-program-section .card-grid .card:hover {
-      outline: 1px solid white; }
-  .main-program-section .agenda-link {
-    font-size: 1.5rem; }
-  .main-program-section .agenda-link:hover {
-    color: var(--dark); }
-
 .partnership-section img {
   width: 100px; }
 
@@ -7450,6 +7419,37 @@ footer > * {
         background: var(--grey); }
       .featured-speakers-section .card-grid .card .card-text {
         font-size: 0.7rem; }
+
+.main-program-section {
+  color: #fefef9;
+  padding-top: 20px;
+  background-image: url(../assets/images/background-2.png);
+  background-size: 25px 25px;
+  background-repeat: repeat; }
+  .main-program-section .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr; }
+    .main-program-section .card-grid .card {
+      margin: 2.5px 0;
+      background: rgba(255, 255, 255, 0.1); }
+      .main-program-section .card-grid .card img {
+        padding-left: 7px;
+        padding-right: 6px;
+        max-width: 60px; }
+      .main-program-section .card-grid .card .card-title {
+        color: var(--primary);
+        font-weight: 700;
+        padding: 0;
+        text-align: center; }
+      .main-program-section .card-grid .card .card-text {
+        padding: 10px 10px 10px 0; }
+    .main-program-section .card-grid .card:hover {
+      outline: 1px solid white; }
+  .main-program-section .agenda-link {
+    font-size: 1.5rem; }
+  .main-program-section .agenda-link:hover {
+    color: var(--dark); }
 
 .more-button {
   align-self: stretch;

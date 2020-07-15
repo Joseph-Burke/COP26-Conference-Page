@@ -7,7 +7,7 @@
   src: url("../assets/fonts/lato-regular.ttf"); }
 
 :root {
-  --Cocogoose: 
+  --Cocogoose:
     cocogoose,
     menlo,
     monaco,
@@ -7345,12 +7345,12 @@ footer > * {
   width: 100px; }
 
 form section {
-  padding: 15px 0px; }
+  padding: 15px 0; }
 
 form .instructions {
   display: flex;
   max-width: 400px;
-  margin: 15px 0px 25px 0px;
+  margin: 15px 0 25px 0;
   padding: 10px;
   border: 1px solid var(--dark);
   border-radius: 50px;
@@ -7391,18 +7391,18 @@ form .tickets {
     text-align: center;
     border: 5px solid transparent;
     background: repeating-linear-gradient(135deg, #f93927, #f93927 5px, #f6f1f4 5px, #f6f1f4 10px, #1a2e5e 10px, #1a2e5e 15px, #f6f1f4 15px, #f6f1f4 20px); }
-    form .tickets table .student-row td,
-    form .tickets table .normal-row td {
-      font-weight: 700;
-      color: var(--primary); }
-    form .tickets table th {
-      font-weight: normal; }
     form .tickets table td,
     form .tickets table th {
       padding: 5px 0;
       border: 1px solid #e6e6e6;
       background: #f7f7f7;
       vertical-align: center; }
+    form .tickets table .student-row td,
+    form .tickets table .normal-row td {
+      font-weight: 700;
+      color: var(--primary); }
+    form .tickets table th {
+      font-weight: normal; }
 
 .form-check-input {
   position: static;
@@ -7414,18 +7414,18 @@ form .tickets {
   background-color: #fefefe; }
   .food-section fieldset {
     border: 1px solid var(--dark);
-    margin: 10px 0px;
+    margin: 10px 0;
     position: relative; }
   .food-section header {
     background: #f6f6f6;
     color: #585858;
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 5px 0px; }
+    padding: 5px 0; }
   .food-section ul {
     justify-content: space-evenly;
     align-items: center;
-    margin: 6px 0px;
+    margin: 6px 0;
     padding: 0; }
   .food-section li {
     padding: 0;

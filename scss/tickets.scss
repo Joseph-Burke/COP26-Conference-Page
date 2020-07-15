@@ -12,20 +12,21 @@
     width: 100px;
   }
 }
+
 form {
   section {
-    padding: 15px 0px;
+    padding: 15px 0;
   }
-  
+
   .instructions {
     display: flex;
     max-width: 400px;
-    margin: 15px 0px 25px 0px;
+    margin: 15px 0 25px 0;
     padding: 10px;
     border: 1px solid var(--dark);
     border-radius: 50px;
     text-align: left;
-    
+
     .step {
       white-space: nowrap;
       align-self: center;
@@ -33,12 +34,12 @@ form {
       font-weight: 600;
     }
   }
-  
+
   .tickets-section {
     position: relative;
     background-color: rgb(247, 247, 247);
     padding-bottom: 30px;
-    
+
     .page-break-arrow {
       position: absolute;
       width: 20px;
@@ -47,7 +48,7 @@ form {
       bottom: -10px;
       background: var(--primary);
       transform: rotate(45deg);
-      
+
       .fa-chevron-down {
         font-size: 1rem;
         font-weight: 900;
@@ -59,17 +60,17 @@ form {
       }
     }
   }
-  
+
   .tickets {
     max-width: 100%;
     border: 1px solid rgb(230, 230, 230);
     box-shadow: 0 15px 50px -47px black, 0 23px 26px -61px black;
-    
+
     table {
       position: relative;
       text-align: center;
       border: 5px solid transparent;
-      background: 
+      background:
         repeating-linear-gradient(
           135deg,
           #f93927,
@@ -81,25 +82,25 @@ form {
           #f6f1f4 15px,
           #f6f1f4 20px
         );
-        
-        .student-row,
-        .normal-row {
-          td {
-          font-weight: 700;
-          color: var(--primary);
-        }
-      }
-      
-      th {
-        font-weight: normal;
-      }
-      
+
       td,
       th {
         padding: 5px 0;
         border: 1px solid rgb(230, 230, 230);
         background: rgb(247, 247, 247);
         vertical-align: center;
+      }
+
+      .student-row,
+      .normal-row {
+        td {
+          font-weight: 700;
+          color: var(--primary);
+        }
+      }
+
+      th {
+        font-weight: normal;
       }
     }
   }
@@ -114,40 +115,41 @@ form {
 
 .food-section {
   background-color: rgb(254, 254, 254);
-  
-fieldset {
+
+  fieldset {
     border: 1px solid var(--dark);
-    margin: 10px 0px;
+    margin: 10px 0;
     position: relative;
   }
-  
-header {
+
+  header {
     background: #f6f6f6;
     color: #585858;
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 5px 0px;
+    padding: 5px 0;
   }
-  
-ul {
+
+  ul {
     justify-content: space-evenly;
     align-items: center;
-    margin: 6px 0px;
+    margin: 6px 0;
     padding: 0;
   }
-  
+
   li {
     padding: 0;
     margin: 5px 2px;
+
     .form-check-label,
     .form-check-input {
       margin: 0 3px;
     }
   }
-  
+
   button {
     @extend .primary-button;
-    
+
     font-size: 1.2rem;
     margin-top: 10px;
   }
@@ -187,7 +189,7 @@ ul {
           font-size: 1.8rem;
         }
       }
-      
+
       button {
         font-size: 2rem;
       }
