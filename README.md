@@ -8,6 +8,10 @@ I was given [this design](https://www.behance.net/gallery/29845175/CC-Global-Sum
 
 After some cursory research, I discovered that the next UN "Conference of the Parties" is due to take place in the UK next year, and I decided this would be the conference for which I would build my website.
 
+## Video Presentation
+
+View my [presentation](https://www.loom.com/share/514053e38f0c48ba83010316a8c5b399) of the project.
+
 ## Built With
 
 - HTML/CSS
