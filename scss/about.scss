@@ -17,16 +17,16 @@
 
     margin-bottom: 15px;
   }
-  
+
   h1 {
     @extend .landing-text-title;
-    
+
     font-size: 2.2rem;
   }
-  
+
   .intro-box {
     @extend .landing-page-text-box;
-    
+
     padding: 15px 10px;
     border: 1px solid #f0f0f0;
     text-align: center;
@@ -35,11 +35,11 @@
     font-size: 1.2rem;
     margin-top: 20px;
   }
-  
+
   .general-enquiries {
     margin: 10px 0;
     color: var(--gray-dark);
-    
+
     a {
       text-decoration: underline;
       color: var(--gray-dark);
@@ -51,7 +51,7 @@
 .logo-section {
   padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
-  
+
   .logo-info {
     max-width: 350px;
   }
@@ -59,11 +59,11 @@
 
 .past-conferences-section {
   padding: 10px 20px;
-  
+
   .card-grid {
     max-width: 800px;
     margin-bottom: 20px;
-    
+
     .card {
       flex-grow: 1;
       height: 145px;
@@ -71,20 +71,20 @@
       text-align: center;
       color: white;
       justify-content: center;
-      
+
       .card-title {
         font-size: 2rem;
         font-weight: 600;
       }
     }
-    
+
     .card-1 {
       background:
         linear-gradient(
           rgba(230, 65, 50, 0.75),
           rgba(230, 65, 50, 0.75)
         ),
-      url(../assets/images/cop25-leaders-photo.jpg);
+        url(../assets/images/cop25-leaders-photo.jpg);
       background-position-x: 50%;
       background-size: cover;
     }
@@ -111,13 +111,13 @@
     h3 {
       display: none;
     }
-    
+
     h1 {
       position: relative;
       font-size: 4rem;
       max-width: 500px;
     }
-    
+
     h1::after {
       content: "";
       display: block;
@@ -128,48 +128,47 @@
       bottom: -10px;
       background-color: var(--primary);
     }
-    
+
     .intro-box {
       max-width: 650px;
       font-size: 1.4rem;
       line-height: 2.4rem;
     }
-    
+
     .general-enquiries {
       font-size: 1.5rem;
       margin: 25px 0;
       margin-top: 15px;
       line-height: 2.6rem;
-      
+
       i {
         margin-left: 5px;
         color: rgba(0, 0, 0, 0.6);
       }
     }
   }
-  
+
   .logo-section {
     border-top: 2px solid #ededed;
     border-bottom: 2px solid #ededed;
-    
+
     .logo-info {
       font-size: 1.4rem;
       max-width: 500px;
     }
-    
+
     img {
       width: 400px;
       height: 200px;
       padding: 20px;
     }
   }
-  
+
   .past-conferences-section {
-    
     .section-text {
       font-size: 1.4rem;
     }
-    
+
     .card-grid {
       margin-top: 30px;
       margin-bottom: 50px;
