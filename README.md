@@ -10,20 +10,21 @@ After some cursory research, I discovered that the next UN "Conference of the Pa
 
 ## Video Presentation
 
-View my [presentation](https://www.loom.com/share/514053e38f0c48ba83010316a8c5b399) of the project.
+View my video [presentation](https://www.loom.com/share/514053e38f0c48ba83010316a8c5b399) of the project to hear more about this assignment and how I approached it.
 
 ## Built With
 
 - HTML/CSS
 - Bootstrap
 - SASS
-- VSCode
-- Google Chrome
+- Stylelint, Webhint, Lighthouse
+- VSCode (with Prettier, Stylelint and Live Server extensions)
+- Google Chrome (with DevTools and Pesticide)
 - MacOS
 
 ## Live Demo
 
-[Live Demo Link](https://practical-lewin-9eb5ef.netlify.app/main.html)
+See the project in action by visiting the [live demo](https://practical-lewin-9eb5ef.netlify.app/main.html)!
 
 ## Getting Started
 
@@ -55,16 +56,18 @@ View my [presentation](https://www.loom.com/share/514053e38f0c48ba83010316a8c5b3
 👤 **Joe Burke**
 
 > Hello, World! 
-My name's Joe. Hire me!
+
+> My name's Joe. Hire me!
+
 - Github: [@Joseph-Burke](https://github.com/Joseph-Burke)
 - Twitter: [@__joeburke](https://twitter.com/__joeburke)
-- Linkedin: [Joseph Burke](https://www.linkedin.com/in/joseph-burke-b7a8261a5)
+- LinkedIn: [Joseph Burke](https://www.linkedin.com/in/joseph-burke-b7a8261a5)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are always welcome!
 
-I'm love meeting other developers, especially ones that give me advice on how to improve my work.
+I love meeting other developers, especially ones that give me advice on how to improve my work.
 
 Drop me an [issue](issues/)!
 
