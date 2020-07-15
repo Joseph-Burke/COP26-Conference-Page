@@ -276,7 +276,7 @@
         
         .card-title {
           font-size: 1.5rem;
-          margin: 15px 0px 5px;
+          margin: 15px 0 5px;
         }
         
         .card-text {
@@ -352,8 +352,8 @@
     .card-grid {
       max-width: 960px;
       
-      .card {
-        .card-body {
+      
+      .card-body {
           max-width: 350px;
           font-size: 1.2em;
         }
