@@ -162,13 +162,15 @@ footer > * {
         padding-right: 100px;
       }
     }
-
     .nav-item {
       margin: 0px 40px;
     }
     .dark-banner {
       padding: 8px 100px;
     }
+  }
+  footer > * {
+    max-height: 80px;
   }
 }
 
