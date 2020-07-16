@@ -112,6 +112,22 @@
   @extend .partnership-section;
 }
 
+footer {
+  background-color: #2e2e2e;
+
+  // .footer-left {
+  //   svg {
+  //     fill: white;
+  //   }
+  // }
+
+  .footer-right {
+    p {
+      color: white;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .landing-section {
     h3 {
