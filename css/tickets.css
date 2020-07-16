@@ -7271,7 +7271,7 @@ footer {
       font-weight: 500; }
     footer .footer-right p {
       margin: 0;
-      font-size: 0.75rem; }
+      font-size: 0.85rem; }
   footer .rights {
     display: flex;
     flex-direction: column;
@@ -7378,7 +7378,7 @@ footer {
     flex: 2; }
     footer .footer-right p {
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding: 2px; }
   footer .rights {
     display: flex;
@@ -7400,7 +7400,7 @@ footer {
     padding: 8px 150px; }
   section .section-title,
   .featured-speakers-section .section-title {
-    font-size: 2rem; } }
+    font-size: 2.4rem; } }
 
 .partnership-section img {
   width: 100px; }
@@ -7415,7 +7415,8 @@ form .instructions {
   padding: 10px;
   border: 1px solid var(--dark);
   border-radius: 50px;
-  text-align: left; }
+  text-align: left;
+  font-size: 1.1rem; }
   form .instructions .step {
     white-space: nowrap;
     align-self: center;
@@ -7476,7 +7477,8 @@ form .tickets {
   .food-section fieldset {
     border: 1px solid var(--dark);
     margin: 10px 0;
-    position: relative; }
+    position: relative;
+    font-size: 1.1rem; }
   .food-section header {
     background: #f6f6f6;
     color: #585858;
@@ -7517,3 +7519,7 @@ form .tickets {
       font-size: 1.8rem; }
   form .food-section button {
     font-size: 2rem; } }
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12px; } }

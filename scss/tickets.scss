@@ -26,6 +26,7 @@ form {
     border: 1px solid var(--dark);
     border-radius: 50px;
     text-align: left;
+    font-size: 1.1rem;
 
     .step {
       white-space: nowrap;
@@ -120,6 +121,7 @@ form {
     border: 1px solid var(--dark);
     margin: 10px 0;
     position: relative;
+    font-size: 1.1rem;
   }
 
   header {
@@ -194,5 +196,11 @@ form {
         font-size: 2rem;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12px;
   }
 }

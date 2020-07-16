@@ -16,6 +16,8 @@
 
   h1 {
     @extend .landing-text-title;
+
+    font-size: 2.7rem;
   }
 
   .intro-box {
@@ -49,7 +51,7 @@
   letter-spacing: -0.05rem;
 
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 
@@ -99,13 +101,13 @@
 
       .card-title {
         margin-bottom: 3px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 600;
         letter-spacing: -0.08rem;
       }
 
       .card-subtitle {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         line-height: 1.4rem;
         color: var(--primary);
         font-style: italic;
@@ -126,7 +128,7 @@
       }
 
       .card-text {
-        font-size: 0.7rem;
+        font-size: 1rem;
       }
     }
   }
@@ -205,14 +207,14 @@
         }
 
         .card-subtitle {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           padding-bottom: 6px;
           margin-top: 3px;
           margin-bottom: 6px;
         }
 
         .card-text {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -228,7 +230,7 @@
     padding-left: 100px;
 
     h3 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
 
     h1 {
@@ -238,11 +240,9 @@
     .intro-box {
       max-width: 500px;
       padding: 20px;
-      font-size: 1.3rem;
-      line-height: 2.5rem;
+      font-size: 1.7rem;
+      line-height: 2.6rem;
       font-weight: 500;
-      background-color: #f8f8f8;
-      color: var(--secondary);
     }
 
     .dates {
@@ -250,7 +250,7 @@
     }
 
     .location {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       font-weight: 500;
     }
   }
@@ -276,15 +276,16 @@
         }
 
         .card-title {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
           margin: 15px 0 5px;
         }
 
         .card-text {
-          max-width: 100%;
-          padding: 5px 5px;
-          flex-grow: 1;
           display: flex;
+          flex-grow: 1;
+          max-width: 100%;
+          padding: 5px;
+          font-size: 1.2rem;
         }
       }
     }
@@ -305,18 +306,19 @@
 
         .card-body {
           max-width: 230px;
+          padding-left: 5px;
         }
 
         .card-title {
-          font-size: 1.6rem;
+          font-size: 1.65rem;
         }
 
         .card-subtitle {
-          font-size: 1.2rem;
+          font-size: 1.35rem;
         }
 
         .card-text {
-          font-size: 1rem;
+          font-size: 1.25rem;
         }
 
         img {
@@ -353,21 +355,23 @@
     .card-grid {
       max-width: 960px;
 
-      .card-body {
-        max-width: 350px;
-        font-size: 1.2em;
-      }
+      .card {
+        .card-body {
+          max-width: 350px;
+          font-size: 1.2em;
+        }
 
-      .card-title {
-        font-size: 1.7rem;
-      }
+        .card-title {
+          font-size: 1.8rem;
+        }
 
-      .card-subtitle {
-        font-size: 1.3rem;
-      }
+        .card-subtitle {
+          font-size: 1.5rem;
+        }
 
-      .card-text {
-        font-size: 1.2rem;
+        .card-text {
+          font-size: 1.35rem;
+        }
       }
     }
   }
