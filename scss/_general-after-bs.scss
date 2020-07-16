@@ -68,9 +68,60 @@ header {
   }
 }
 
-footer > * {
+footer * {
   max-height: 60px;
   padding: 10px 0;
+}
+
+footer {
+  display: flex;
+
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .footer-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      padding: 0;
+      max-height: 30px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .creative-commons {
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.75rem;
+    }
+  }
+
+  .rights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .rights p {
+    margin: 0;
+    font-size: 0.8rem;
+    flex: 1;
+  }
 }
 
 .landing-section {
@@ -161,6 +212,20 @@ footer > * {
   .partnership-section svg {
     margin: 0 10px;
   }
+
+  footer {
+    .footer-left {
+      img {
+        max-height: 35px;
+      }
+    }
+
+    .footer-right {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -185,6 +250,38 @@ footer > * {
 
     .dark-banner {
       padding: 8px 100px;
+    }
+  }
+
+  footer {
+    .footer-left {
+      img {
+        max-height: 40px;
+      }
+    }
+
+    .footer-right {
+      flex: 2;
+
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        padding: 2px;
+      }
+    }
+
+    .rights {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .rights p {
+      margin: 0;
+      font-size: 0.8rem;
+      flex: 1;
     }
   }
 
