@@ -1,10 +1,10 @@
 @font-face {
   font-family: Cocogoose;
-  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf"); }
+  src: url("../fonts/cocogoose/Cocogoose_trial.otf"); }
 
 @font-face {
   font-family: Lato;
-  src: url("../assets/fonts/lato-regular.ttf"); }
+  src: url("../fonts/lato-regular.ttf"); }
 
 :root {
   --Cocogoose:
@@ -7288,17 +7288,17 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px; }
 
-.landing-text-title {
+.landing-text-title, .landing-section h1 {
   font-family: var(--Cocogoose);
   font-weight: 900;
   color: var(--primary); }
 
-.landing-text-subtitle {
+.landing-text-subtitle, .landing-section h3 {
   font-weight: 300;
   font-size: 1.9rem;
   color: var(--primary); }
 
-.landing-page-text-box {
+.landing-page-text-box, .landing-section .intro-box {
   padding: 15px 15px;
   margin: 15px -3px 0;
   border: 3px solid white;
@@ -7342,7 +7342,7 @@ footer {
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
 
-.primary-button, .food-section button {
+.primary-button {
   background-color: var(--primary);
   border: none;
   color: #fefef9;
@@ -7402,124 +7402,104 @@ footer {
   .featured-speakers-section .section-title {
     font-size: 2.4rem; } }
 
-.partnership-section img {
-  width: 100px; }
-
-form section {
-  padding: 15px 0; }
-
-form .instructions {
-  display: flex;
-  max-width: 400px;
-  margin: 15px 0 25px 0;
-  padding: 10px;
-  border: 1px solid var(--dark);
-  border-radius: 50px;
-  text-align: left;
-  font-size: 1.1rem; }
-  form .instructions .step {
-    white-space: nowrap;
-    align-self: center;
-    color: var(--primary);
-    font-weight: 600; }
-
-form .tickets-section {
-  position: relative;
-  background-color: #f7f7f7;
-  padding-bottom: 30px; }
-  form .tickets-section .page-break-arrow {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: calc(50% - 10px);
-    bottom: -10px;
-    background: var(--primary);
-    transform: rotate(45deg); }
-    form .tickets-section .page-break-arrow .fa-chevron-down {
-      font-size: 1rem;
-      font-weight: 900;
-      position: relative;
-      transform: rotate(-45deg);
-      top: 2.7px;
-      left: 5.5px;
-      color: white; }
-
-form .tickets {
-  max-width: 100%;
-  border: 1px solid #e6e6e6;
-  box-shadow: 0 15px 50px -47px black, 0 23px 26px -61px black; }
-  form .tickets table {
-    position: relative;
+.landing-section {
+  padding: 20px 15px; }
+  .landing-section h3 {
+    margin-bottom: 15px; }
+  .landing-section h1 {
+    font-size: 2.3rem; }
+  .landing-section .intro-box {
+    padding: 15px 10px;
+    border: 1px solid #f0f0f0;
     text-align: center;
-    border: 5px solid transparent;
-    background: repeating-linear-gradient(135deg, #f93927, #f93927 5px, #f6f1f4 5px, #f6f1f4 10px, #1a2e5e 10px, #1a2e5e 15px, #f6f1f4 15px, #f6f1f4 20px); }
-    form .tickets table td,
-    form .tickets table th {
-      padding: 5px 0;
-      border: 1px solid #e6e6e6;
-      background: #f7f7f7;
-      vertical-align: center; }
-    form .tickets table .student-row td,
-    form .tickets table .normal-row td {
-      font-weight: 700;
-      color: var(--primary); }
-    form .tickets table th {
-      font-weight: normal; }
-
-.form-check-input {
-  position: static;
-  display: block;
-  margin: 5px auto;
-  align-self: center; }
-
-.food-section {
-  background-color: #fefefe; }
-  .food-section fieldset {
-    border: 1px solid var(--dark);
-    margin: 10px 0;
-    position: relative;
-    font-size: 1.1rem; }
-  .food-section header {
-    background: #f6f6f6;
-    color: #585858;
+    background: white;
+    color: #5e5e5e;
     font-size: 1.3rem;
-    font-weight: 500;
-    padding: 5px 0; }
-  .food-section ul {
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 6px 0;
-    padding: 0; }
-  .food-section li {
-    padding: 0;
-    margin: 5px 2px; }
-    .food-section li .form-check-label,
-    .food-section li .form-check-input {
-      margin: 0 3px; }
-  .food-section button {
-    font-size: 1.2rem;
-    margin-top: 10px; }
+    margin-top: 20px; }
+  .landing-section .general-enquiries {
+    margin: 10px 0;
+    color: var(--gray-dark);
+    font-size: 1.4rem; }
+    .landing-section .general-enquiries a {
+      text-decoration: underline;
+      color: var(--gray-dark);
+      font-weight: 700; }
+
+.logo-section {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed; }
+  .logo-section .logo-info {
+    max-width: 350px;
+    font-size: 1.3rem; }
+
+.past-conferences-section {
+  padding: 10px 20px; }
+  .past-conferences-section .section-text {
+    font-size: 1.3rem; }
+  .past-conferences-section .card-grid {
+    max-width: 800px;
+    margin-bottom: 20px; }
+    .past-conferences-section .card-grid .card {
+      flex-grow: 1;
+      height: 145px;
+      border-radius: 0;
+      text-align: center;
+      color: white;
+      justify-content: center; }
+      .past-conferences-section .card-grid .card .card-title {
+        font-size: 2rem;
+        font-weight: 600; }
+    .past-conferences-section .card-grid .card-1 {
+      background: linear-gradient(rgba(230, 65, 50, 0.75), rgba(230, 65, 50, 0.75)), url(../images/cop25-leaders-photo.jpg);
+      background-position-x: 50%;
+      background-size: cover; }
+    .past-conferences-section .card-grid .card-2 {
+      background: linear-gradient(rgba(230, 65, 50, 0.75), rgba(230, 65, 50, 0.75)), url(../images/COP24-photo.jpg);
+      background-position-x: 55%;
+      background-size: cover; }
 
 @media screen and (min-width: 768px) {
-  form .tickets-section .instructions,
-  form .food-section .instructions {
+  .landing-section h3 {
+    display: none; }
+  .landing-section h1 {
+    position: relative;
+    font-size: 4rem;
+    max-width: 500px; }
+  .landing-section h1::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    height: 1px;
+    width: 20px;
+    bottom: -10px;
+    background-color: var(--primary); }
+  .landing-section .intro-box {
+    max-width: 650px;
     font-size: 1.6rem;
-    padding: 10px 20px;
-    max-width: 700px; }
-  form .tickets-section {
-    padding-bottom: 50px; }
-    form .tickets-section .tickets table th,
-    form .tickets-section .tickets table td {
-      font-size: 2rem;
-      padding: 10px 20px; }
-  form .food-section fieldset {
-    font-size: 1.6rem;
-    max-width: 900px; }
-    form .food-section fieldset header {
-      font-size: 1.8rem; }
-  form .food-section button {
-    font-size: 2rem; } }
-
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 12px; } }
+    line-height: 2.4rem;
+    font-weight: 400; }
+  .landing-section .general-enquiries {
+    font-size: 1.7rem;
+    margin: 25px 0;
+    margin-top: 15px;
+    line-height: 2.6rem; }
+    .landing-section .general-enquiries i {
+      margin-left: 5px;
+      color: rgba(0, 0, 0, 0.6); }
+  .logo-section {
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed; }
+    .logo-section .logo-info {
+      font-size: 1.6rem;
+      max-width: 500px; }
+    .logo-section img {
+      width: 400px;
+      height: 200px;
+      padding: 20px; }
+  .past-conferences-section .section-text {
+    font-size: 1.6rem; }
+  .past-conferences-section .card-grid {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 1.8rem; } }

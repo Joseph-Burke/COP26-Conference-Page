@@ -1,10 +1,10 @@
 @font-face {
   font-family: Cocogoose;
-  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf"); }
+  src: url("../fonts/cocogoose/Cocogoose_trial.otf"); }
 
 @font-face {
   font-family: Lato;
-  src: url("../assets/fonts/lato-regular.ttf"); }
+  src: url("../fonts/lato-regular.ttf"); }
 
 :root {
   --Cocogoose:
@@ -7288,17 +7288,17 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px; }
 
-.landing-text-title, .landing-section h1 {
+.landing-text-title {
   font-family: var(--Cocogoose);
   font-weight: 900;
   color: var(--primary); }
 
-.landing-text-subtitle, .landing-section h3 {
+.landing-text-subtitle {
   font-weight: 300;
   font-size: 1.9rem;
   color: var(--primary); }
 
-.landing-page-text-box, .landing-section .intro-box {
+.landing-page-text-box {
   padding: 15px 15px;
   margin: 15px -3px 0;
   border: 3px solid white;
@@ -7342,7 +7342,7 @@ footer {
     fill: rgba(255, 255, 255, 0.4);
     background: transparent; }
 
-.primary-button, .main-program-section button {
+.primary-button, .food-section button {
   background-color: var(--primary);
   border: none;
   color: #fefef9;
@@ -7402,225 +7402,124 @@ footer {
   .featured-speakers-section .section-title {
     font-size: 2.4rem; } }
 
-.landing-section h1 {
-  font-size: 2.7rem; }
-
-.landing-section .dates {
-  margin-top: 30px;
-  font-size: 2rem;
-  font-family: var(--Cocogoose);
-  color: #585858; }
-
-.landing-section .location {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-top: 10px;
-  color: #585858; }
-
 .partnership-section img {
   width: 100px; }
 
-.featured-speakers-section {
-  letter-spacing: -0.05rem; }
-  .featured-speakers-section h3 {
-    font-size: 1.6rem;
-    font-weight: 500; }
-  .featured-speakers-section .card-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 700px; }
-    .featured-speakers-section .card-grid .img-wrapper {
-      position: relative; }
-    .featured-speakers-section .card-grid .img-wrapper::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 30px;
-      height: 30px;
-      background: url(../assets/images/checkered-black-and-white.jpg);
-      background-size: 40px; }
-    .featured-speakers-section .card-grid .card {
-      max-width: max-content;
-      flex-grow: 1;
-      margin: 5px 0;
-      border: none;
-      letter-spacing: -0.05rem; }
-      .featured-speakers-section .card-grid .card img {
-        width: 50px;
-        height: auto;
-        padding-top: 9px;
-        padding-left: 9px;
-        padding-right: 0;
-        position: relative; }
-      .featured-speakers-section .card-grid .card .card-body {
-        padding-left: 5px;
-        padding-right: 5px;
-        max-width: 400px; }
-      .featured-speakers-section .card-grid .card .card-title {
-        margin-bottom: 3px;
-        font-size: 1.3rem;
-        font-weight: 600;
-        letter-spacing: -0.08rem; }
-      .featured-speakers-section .card-grid .card .card-subtitle {
-        font-size: 1.1rem;
-        line-height: 1.4rem;
-        color: var(--primary);
-        font-style: italic;
-        letter-spacing: -0.06rem;
-        margin-bottom: 4px;
-        position: relative; }
-      .featured-speakers-section .card-grid .card .card-subtitle::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        bottom: -2.5px;
-        left: 0;
-        width: 20px;
-        height: 0.1px;
-        background: var(--grey); }
-      .featured-speakers-section .card-grid .card .card-text {
-        font-size: 1rem; }
+form section {
+  padding: 15px 0; }
 
-.main-program-section {
-  color: #fefef9;
-  padding-top: 20px;
-  background-image: url(../assets/images/background-2.png);
-  background-size: 25px 25px;
-  background-repeat: repeat; }
-  .main-program-section .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr; }
-    .main-program-section .card-grid .card {
-      margin: 2.5px 0;
-      background: rgba(255, 255, 255, 0.1); }
-      .main-program-section .card-grid .card img {
-        padding-left: 7px;
-        padding-right: 6px;
-        max-width: 60px; }
-      .main-program-section .card-grid .card .card-title {
-        color: var(--primary);
-        font-weight: 700;
-        padding: 0;
-        text-align: center; }
-      .main-program-section .card-grid .card .card-text {
-        padding: 10px 10px 10px 0; }
-    .main-program-section .card-grid .card:hover {
-      outline: 1px solid white; }
-  .main-program-section .agenda-link {
-    font-size: 1.5rem; }
-  .main-program-section .agenda-link:hover {
-    color: var(--dark); }
+form .instructions {
+  display: flex;
+  max-width: 400px;
+  margin: 15px 0 25px 0;
+  padding: 10px;
+  border: 1px solid var(--dark);
+  border-radius: 50px;
+  text-align: left;
+  font-size: 1.1rem; }
+  form .instructions .step {
+    white-space: nowrap;
+    align-self: center;
+    color: var(--primary);
+    font-weight: 600; }
 
-.more-button {
-  align-self: stretch;
-  font-size: 0.8rem;
-  border: 1px solid #dadada;
-  border-radius: 2px;
-  margin: 20px 0; }
-  .more-button .fa-chevron-down {
-    color: var(--primary); }
+form .tickets-section {
+  position: relative;
+  background-color: #f7f7f7;
+  padding-bottom: 30px; }
+  form .tickets-section .page-break-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    bottom: -10px;
+    background: var(--primary);
+    transform: rotate(45deg); }
+    form .tickets-section .page-break-arrow .fa-chevron-down {
+      font-size: 1rem;
+      font-weight: 900;
+      position: relative;
+      transform: rotate(-45deg);
+      top: 2.7px;
+      left: 5.5px;
+      color: white; }
 
-@media screen and (min-width: 425px) {
-  .featured-speakers-section .card-grid .card .card-title {
-    font-size: 1.7rem; }
-  .featured-speakers-section .card-grid .card .card-subtitle {
-    font-size: 1.4rem;
-    padding-bottom: 6px;
-    margin-top: 3px;
-    margin-bottom: 6px; }
-  .featured-speakers-section .card-grid .card .card-text {
-    font-size: 1.2rem; }
-  .more-button {
-    font-size: 1.3rem; } }
+form .tickets {
+  max-width: 100%;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 15px 50px -47px black, 0 23px 26px -61px black; }
+  form .tickets table {
+    position: relative;
+    text-align: center;
+    border: 5px solid transparent;
+    background: repeating-linear-gradient(135deg, #f93927, #f93927 5px, #f6f1f4 5px, #f6f1f4 10px, #1a2e5e 10px, #1a2e5e 15px, #f6f1f4 15px, #f6f1f4 20px); }
+    form .tickets table td,
+    form .tickets table th {
+      padding: 5px 0;
+      border: 1px solid #e6e6e6;
+      background: #f7f7f7;
+      vertical-align: center; }
+    form .tickets table .student-row td,
+    form .tickets table .normal-row td {
+      font-weight: 700;
+      color: var(--primary); }
+    form .tickets table th {
+      font-weight: normal; }
+
+.form-check-input {
+  position: static;
+  display: block;
+  margin: 5px auto;
+  align-self: center; }
+
+.food-section {
+  background-color: #fefefe; }
+  .food-section fieldset {
+    border: 1px solid var(--dark);
+    margin: 10px 0;
+    position: relative;
+    font-size: 1.1rem; }
+  .food-section header {
+    background: #f6f6f6;
+    color: #585858;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px 0; }
+  .food-section ul {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6px 0;
+    padding: 0; }
+  .food-section li {
+    padding: 0;
+    margin: 5px 2px; }
+    .food-section li .form-check-label,
+    .food-section li .form-check-input {
+      margin: 0 3px; }
+  .food-section button {
+    font-size: 1.2rem;
+    margin-top: 10px; }
 
 @media screen and (min-width: 768px) {
-  .landing-section {
-    padding-left: 100px; }
-    .landing-section h3 {
-      font-size: 2.8rem; }
-    .landing-section h1 {
-      font-size: 4rem; }
-    .landing-section .intro-box {
-      max-width: 500px;
-      padding: 20px;
-      font-size: 1.7rem;
-      line-height: 2.6rem;
-      font-weight: 500; }
-    .landing-section .dates {
-      font-size: 2.4rem; }
-    .landing-section .location {
-      font-size: 1.9rem;
-      font-weight: 500; }
-  .main-program-section .card-grid {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    height: max-content; }
-    .main-program-section .card-grid .card {
-      margin: 0;
-      padding: 10px 5px 5px 5px;
-      align-items: stretch; }
-      .main-program-section .card-grid .card > * {
-        flex: 0 0 auto; }
-      .main-program-section .card-grid .card img {
-        width: 75%;
-        height: auto; }
-      .main-program-section .card-grid .card .card-title {
-        font-size: 1.7rem;
-        margin: 15px 0 5px; }
-      .main-program-section .card-grid .card .card-text {
-        display: flex;
-        flex-grow: 1;
-        max-width: 100%;
-        padding: 5px;
-        font-size: 1.2rem; }
-  .main-program-section a {
-    font-size: 1.1rem;
-    color: #f0f0f0;
-    text-transform: uppercase;
-    text-decoration: underline; }
-  .featured-speakers-section .card-grid .card {
-    display: flex;
-    min-width: 0; }
-    .featured-speakers-section .card-grid .card .card-body {
-      max-width: 230px;
-      padding-left: 5px; }
-    .featured-speakers-section .card-grid .card .card-title {
-      font-size: 1.65rem; }
-    .featured-speakers-section .card-grid .card .card-subtitle {
-      font-size: 1.35rem; }
-    .featured-speakers-section .card-grid .card .card-text {
-      font-size: 1.25rem; }
-    .featured-speakers-section .card-grid .card img {
-      padding: 0;
-      max-width: 100px; }
-    .featured-speakers-section .card-grid .card .img-wrapper::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -10px;
-      left: -10px;
-      width: 30px;
-      height: 30px;
-      background: url(../assets/images/checkered-black-and-white.jpg);
-      background-size: 40px; } }
+  form .tickets-section .instructions,
+  form .food-section .instructions {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    max-width: 700px; }
+  form .tickets-section {
+    padding-bottom: 50px; }
+    form .tickets-section .tickets table th,
+    form .tickets-section .tickets table td {
+      font-size: 2rem;
+      padding: 10px 20px; }
+  form .food-section fieldset {
+    font-size: 1.6rem;
+    max-width: 900px; }
+    form .food-section fieldset header {
+      font-size: 1.8rem; }
+  form .food-section button {
+    font-size: 2rem; } }
 
 @media screen and (min-width: 1024px) {
-  .landing-section {
-    padding-left: 150px; }
-    .landing-section h1 {
-      font-size: 5.5rem; }
-  .featured-speakers-section .card-grid {
-    max-width: 960px; }
-    .featured-speakers-section .card-grid .card .card-body {
-      max-width: 350px;
-      font-size: 1.2em; }
-    .featured-speakers-section .card-grid .card .card-title {
-      font-size: 1.8rem; }
-    .featured-speakers-section .card-grid .card .card-subtitle {
-      font-size: 1.5rem; }
-    .featured-speakers-section .card-grid .card .card-text {
-      font-size: 1.35rem; } }
+  html {
+    font-size: 12px; } }
