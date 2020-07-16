@@ -1,0 +1,201 @@
+// Import multi-page styles from _general-before-bs.scss file
+@import "general-before-bs.scss";
+
+// Import Bootstrap SCSS file
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import multi-page styles from _general-after-bs.scss file
+@import "general-after-bs.scss";
+
+.landing-section {
+  @extend .landing-section;
+
+  padding: 20px 15px;
+
+  h3 {
+    @extend .landing-text-subtitle;
+
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    @extend .landing-text-title;
+
+    font-size: 2.3rem;
+  }
+
+  .intro-box {
+    @extend .landing-page-text-box;
+
+    padding: 15px 10px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    background: white;
+    color: #5e5e5e;
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+
+  .general-enquiries {
+    margin: 10px 0;
+    color: var(--gray-dark);
+    font-size: 1.4rem;
+
+    a {
+      text-decoration: underline;
+      color: var(--gray-dark);
+      font-weight: 700;
+    }
+  }
+}
+
+.logo-section {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+
+  .logo-info {
+    max-width: 350px;
+    font-size: 1.3rem;
+  }
+}
+
+.past-conferences-section {
+  padding: 10px 20px;
+
+  .section-text {
+    font-size: 1.3rem;
+  }
+
+  .card-grid {
+    max-width: 800px;
+    margin-bottom: 20px;
+
+    .card {
+      flex-grow: 1;
+      height: 145px;
+      border-radius: 0;
+      text-align: center;
+      color: white;
+      justify-content: center;
+
+      .card-title {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    .card-1 {
+      background:
+        linear-gradient(
+          rgba(230, 65, 50, 0.75),
+          rgba(230, 65, 50, 0.75)
+        ),
+        url(../images/cop25-leaders-photo.jpg);
+      background-position-x: 50%;
+      background-size: cover;
+    }
+
+    .card-2 {
+      background:
+        linear-gradient(
+          rgba(230, 65, 50, 0.75),
+          rgba(230, 65, 50, 0.75)
+        ),
+        url(../images/COP24-photo.jpg);
+      background-position-x: 55%;
+      background-size: cover;
+    }
+  }
+}
+
+.partnership-section {
+  @extend .partnership-section;
+}
+
+footer {
+  background-color: #2e2e2e;
+
+  // .footer-left {
+  //   svg {
+  //     fill: white;
+  //   }
+  // }
+
+  .footer-right {
+    p {
+      color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-section {
+    h3 {
+      display: none;
+    }
+
+    h1 {
+      position: relative;
+      font-size: 4rem;
+      max-width: 500px;
+    }
+
+    h1::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      height: 1px;
+      width: 20px;
+      bottom: -10px;
+      background-color: var(--primary);
+    }
+
+    .intro-box {
+      max-width: 650px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+    }
+
+    .general-enquiries {
+      font-size: 1.7rem;
+      margin: 25px 0;
+      margin-top: 15px;
+      line-height: 2.6rem;
+
+      i {
+        margin-left: 5px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  .logo-section {
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+
+    .logo-info {
+      font-size: 1.6rem;
+      max-width: 500px;
+    }
+
+    img {
+      width: 400px;
+      height: 200px;
+      padding: 20px;
+    }
+  }
+
+  .past-conferences-section {
+    .section-text {
+      font-size: 1.6rem;
+    }
+
+    .card-grid {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-size: 1.8rem;
+    }
+  }
+}

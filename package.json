@@ -1,0 +1,26 @@
+{
+  "name": "html-css-capstone",
+  "version": "1.0.0",
+  "description": "A repository for work related to my capstone project for Microverse's HTML/CSS module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joseph-Burke/HTML-CSS-Capstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joseph-Burke/HTML-CSS-Capstone/issues"
+  },
+  "homepage": "https://github.com/Joseph-Burke/HTML-CSS-Capstone#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "lighthouse": "^6.1.1",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
+}

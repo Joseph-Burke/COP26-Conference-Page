@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/tickets.css" />
+    <title>COP26 - Tickets</title>
+  </head>
+
+  <body>
+    <header>
+      <ul
+        class="dark-banner container-fluid d-none d-md-flex justify-content-end"
+      >
+        <li>
+          <a class="social-media-icon" href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a class="social-media-icon" href="https://www.twitter.com/"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#">English</a>
+        </li>
+        <li>
+          <a href="#">My Page</a>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="main.html"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-symbol"></span>
+          <span class="navbar-toggler-symbol"></span>
+          <span class="navbar-toggler-symbol"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="tickets.html">Tickets</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <section class="tickets-section centered-column container-fluid">
+          <h1 class="section-title">Select Tickets</h1>
+
+          <div class="instructions">
+            <span class="step pr-3">&#9670; STEP 1</span>
+            <span
+              >Please select which week(s) of the conference you would like to
+              attend</span
+            >
+          </div>
+
+          <fieldset class="tickets">
+            <table class="table table-responsive m-0">
+              <thead>
+                <tr>
+                  <th scope="col">Ticket</th>
+                  <th class="text-center" scope="col" colspan="2">
+                    1-Week Ticket
+                  </th>
+                  <th scope="col">
+                    Full Conference Ticket
+                  </th>
+                  <th class="text-break" scope="col">
+                    UN/Corporate Affiliates
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Date</th>
+                  <td>01.11 - 07.11</td>
+                  <td>06.11 - 12.11</td>
+                  <td class="text-break">01.11 - 12.11</td>
+                  <td class="text-break">01.11 - 12.11</td>
+                </tr>
+                <tr class="normal-row">
+                  <th scope="row">Normal</th>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£70</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="01/11 1-Week-Ticket Normal"
+                    />
+                  </td>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£70</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="06/11 1-Week-Ticket Normal"
+                    />
+                  </td>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£100</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="Full-Conference Normal"
+                    />
+                  </td>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£0</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="Affiliate Normal"
+                    />
+                  </td>
+                </tr>
+                <tr class="student-row">
+                  <th scope="row">Students</th>
+
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£30</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="01/11 1-Week-Ticket Students"
+                    />
+                  </td>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£30</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="06/11 1-Week-Ticket Normal"
+                    />
+                  </td>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£50</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="Full-Conference Normal"
+                    />
+                  </td>
+                  <td class="form-check d-table-cell">
+                    <label class="form-check-label">£0</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ticket"
+                      value="Affiliate Student"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="page-break-arrow">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </fieldset>
+        </section>
+
+        <section class="food-section centered-column container-fluid">
+          <h3 class="section-title">Select Your Meals</h3>
+
+          <div class="instructions">
+            <span class="step pr-3">&#9670; STEP 2</span>
+            <span
+              >Please select your food preferences for your complementary
+              lunches and dinners throughout the conference. A range of dietary
+              needs will be catered for.</span
+            >
+          </div>
+
+          <div class="centered-column flex-md-row">
+            <fieldset class="container px-0 mx-md-3">
+              <header class="text-center">Lunch</header>
+              <ul class="d-flex flex-wrap">
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegan</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegetarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Pescatarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Omnivore</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Halal</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Lactose Intolerant</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Lunch"
+                    value=""
+                  />
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="container px-0 mx-md-3">
+              <header class="text-center">Dinner</header>
+              <ul class="d-flex flex-wrap">
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegan</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Vegetarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Pescatarian</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Omnivore</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Halal</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+                <li class="form-check d-inline-flex align-items-center">
+                  <label class="form-check-label">Lactose Intolerant</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Dinner"
+                    value=""
+                  />
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button class="px-5 py-3" type="submit">Submit Form</button>
+        </section>
+      </form>
+    </main>
+    <footer class="container-fluid d-md-flex py-md-4 px-md-5">
+      <div class="footer-left container-fluid">
+        <img class="united-nations-logo" src="assets/images/UN-logo.svg" alt="UN logo" />
+      </div>
+      <div class="footer-right">
+        <p class="creative-commons">2020 Creative Commons U.K. <br class="d-md-none">Some Rights Reserved.</p>
+        <p class="d-none d-md-block">
+          All creative content remains the property of its owner unless
+          otherwise stated. Website created by
+          <a href="https://github.com/Joseph-Burke">Joseph Burke</a> using a
+          design by
+          <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">Cindy Shin</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

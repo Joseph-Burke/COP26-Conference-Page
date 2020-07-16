@@ -1,0 +1,308 @@
+html {
+  font-size: 10px;
+}
+
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  .navbar {
+    background-color: white;
+  }
+
+  .dark-banner {
+    padding: 8px 250px;
+    background-color: #3e3e3e;
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 0;
+
+    li {
+      margin: 0 10px;
+
+      .social-media-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+    .fa-twitter {
+      margin-right: 8px;
+    }
+
+    a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+
+  .navbar-collapse .navbar-nav .active a {
+    color: var(--primary);
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    .navbar-toggler-symbol {
+      display: block;
+      width: 23px;
+      height: 4px;
+      margin: 3px 0;
+      background: #535353;
+    }
+  }
+
+  .navbar-brand {
+    height: 50px;
+    width: 50px;
+    background: url(../images/COP26-logo.png);
+    background-size: 207%;
+  }
+}
+
+footer * {
+  max-height: 60px;
+  padding: 10px 0;
+}
+
+footer {
+  display: flex;
+
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .footer-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      padding: 0;
+      max-height: 30px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .creative-commons {
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.85rem;
+    }
+  }
+
+  .rights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .rights p {
+    margin: 0;
+    font-size: 0.8rem;
+    flex: 1;
+  }
+}
+
+.landing-section {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.landing-text-title {
+  font-family: var(--Cocogoose);
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.landing-text-subtitle {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: var(--primary);
+}
+
+.landing-page-text-box {
+  padding: 15px 15px;
+  margin: 15px -3px 0;
+  border: 3px solid white;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  color: var(--secondary);
+}
+
+.section-title {
+  margin: 15px 0;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 1px;
+  width: 20px;
+  bottom: -7.5px;
+  background-color: var(--primary);
+}
+
+.partnership-section {
+  background-color: #414246;
+  padding: 10px 10px 30px 10px;
+
+  h3 {
+    margin: 10px 0;
+    color: #f1f1f1;
+    font-size: 1.5rem;
+  }
+
+  .fb-svg {
+    position: relative;
+    width: 50px;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  svg {
+    width: 60px;
+    height: auto;
+    margin: 0 10px;
+    fill: rgba(255, 255, 255, 0.4);
+    background: transparent;
+  }
+}
+
+.primary-button {
+  background-color: var(--primary);
+  border: none;
+  color: #fefef9;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 425px) {
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .partnership-section svg {
+    margin: 0 10px;
+  }
+
+  footer {
+    .footer-left {
+      img {
+        max-height: 35px;
+      }
+    }
+
+    .footer-right {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin: 20px 0;
+    font-size: 2.2rem;
+  }
+
+  header {
+    .navbar {
+      padding: 8px 100px;
+
+      .navbar-collapse {
+        justify-content: flex-end;
+        padding-right: 100px;
+      }
+    }
+
+    .nav-item {
+      margin: 0 40px;
+    }
+
+    .dark-banner {
+      padding: 8px 100px;
+    }
+  }
+
+  footer {
+    .footer-left {
+      img {
+        max-height: 40px;
+      }
+    }
+
+    .footer-right {
+      flex: 2;
+
+      p {
+        margin: 0;
+        font-size: 1rem;
+        padding: 2px;
+      }
+    }
+
+    .rights {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .rights p {
+      margin: 0;
+      font-size: 0.8rem;
+      flex: 1;
+    }
+  }
+
+  footer > * {
+    max-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    .navbar {
+      padding: 8px 150px;
+    }
+
+    .dark-banner {
+      padding: 8px 150px;
+    }
+  }
+
+  section .section-title,
+  .featured-speakers-section .section-title {
+    font-size: 2.4rem;
+  }
+}

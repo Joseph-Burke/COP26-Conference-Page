@@ -1,0 +1,206 @@
+// Import multi-page styles from _general-before-bs.scss file
+@import "general-before-bs.scss";
+
+// Import Bootstrap SCSS file
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import multi-page styles from _general-after-bs.scss file
+@import "general-after-bs.scss";
+
+.partnership-section {
+  img {
+    width: 100px;
+  }
+}
+
+form {
+  section {
+    padding: 15px 0;
+  }
+
+  .instructions {
+    display: flex;
+    max-width: 400px;
+    margin: 15px 0 25px 0;
+    padding: 10px;
+    border: 1px solid var(--dark);
+    border-radius: 50px;
+    text-align: left;
+    font-size: 1.1rem;
+
+    .step {
+      white-space: nowrap;
+      align-self: center;
+      color: var(--primary);
+      font-weight: 600;
+    }
+  }
+
+  .tickets-section {
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 30px;
+
+    .page-break-arrow {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: calc(50% - 10px);
+      bottom: -10px;
+      background: var(--primary);
+      transform: rotate(45deg);
+
+      .fa-chevron-down {
+        font-size: 1rem;
+        font-weight: 900;
+        position: relative;
+        transform: rotate(-45deg);
+        top: 2.7px;
+        left: 5.5px;
+        color: white;
+      }
+    }
+  }
+
+  .tickets {
+    max-width: 100%;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0 15px 50px -47px black, 0 23px 26px -61px black;
+
+    table {
+      position: relative;
+      text-align: center;
+      border: 5px solid transparent;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          #f93927,
+          #f93927 5px,
+          #f6f1f4 5px,
+          #f6f1f4 10px,
+          #1a2e5e 10px,
+          #1a2e5e 15px,
+          #f6f1f4 15px,
+          #f6f1f4 20px
+        );
+
+      td,
+      th {
+        padding: 5px 0;
+        border: 1px solid rgb(230, 230, 230);
+        background: rgb(247, 247, 247);
+        vertical-align: center;
+      }
+
+      .student-row,
+      .normal-row {
+        td {
+          font-weight: 700;
+          color: var(--primary);
+        }
+      }
+
+      th {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.form-check-input {
+  position: static;
+  display: block;
+  margin: 5px auto;
+  align-self: center;
+}
+
+.food-section {
+  background-color: rgb(254, 254, 254);
+
+  fieldset {
+    border: 1px solid var(--dark);
+    margin: 10px 0;
+    position: relative;
+    font-size: 1.1rem;
+  }
+
+  header {
+    background: #f6f6f6;
+    color: #585858;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px 0;
+  }
+
+  ul {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6px 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0;
+    margin: 5px 2px;
+
+    .form-check-label,
+    .form-check-input {
+      margin: 0 3px;
+    }
+  }
+
+  button {
+    @extend .primary-button;
+
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    .tickets-section,
+    .food-section {
+      .instructions {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        max-width: 700px;
+      }
+    }
+
+    .tickets-section {
+      padding-bottom: 50px;
+
+      .tickets {
+        table {
+          th,
+          td {
+            font-size: 2rem;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+
+    .food-section {
+      fieldset {
+        font-size: 1.6rem;
+        max-width: 900px;
+
+        header {
+          font-size: 1.8rem;
+        }
+      }
+
+      button {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 11px;
+  }
+}

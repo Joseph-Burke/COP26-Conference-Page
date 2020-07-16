@@ -1,0 +1,378 @@
+// Import multi-page styles from _general-before-bs.scss file
+@import "general-before-bs.scss";
+
+// Import Bootstrap SCSS file
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import multi-page styles from _general-after-bs.scss file
+@import "general-after-bs.scss";
+
+.landing-section {
+  @extend .landing-section;
+
+  h3 {
+    @extend .landing-text-subtitle;
+  }
+
+  h1 {
+    @extend .landing-text-title;
+
+    font-size: 2.7rem;
+  }
+
+  .intro-box {
+    @extend .landing-page-text-box;
+  }
+
+  .dates {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-family: var(--Cocogoose);
+    color: #585858;
+  }
+
+  .location {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #585858;
+  }
+}
+
+.partnership-section {
+  @extend .partnership-section;
+
+  img {
+    width: 100px;
+  }
+}
+
+.featured-speakers-section {
+  letter-spacing: -0.05rem;
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+
+    .img-wrapper {
+      position: relative;
+    }
+
+    .img-wrapper::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: url(../images/checkered-black-and-white.jpg);
+      background-size: 40px;
+    }
+
+    .card {
+      max-width: max-content;
+      flex-grow: 1;
+      margin: 5px 0;
+      border: none;
+      letter-spacing: -0.05rem;
+
+      img {
+        width: 50px;
+        height: auto;
+        padding-top: 9px;
+        padding-left: 9px;
+        padding-right: 0;
+        position: relative;
+      }
+
+      .card-body {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 400px;
+      }
+
+      .card-title {
+        margin-bottom: 3px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: -0.08rem;
+      }
+
+      .card-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        color: var(--primary);
+        font-style: italic;
+        letter-spacing: -0.06rem;
+        margin-bottom: 4px;
+        position: relative;
+      }
+
+      .card-subtitle::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -2.5px;
+        left: 0;
+        width: 20px;
+        height: 0.1px;
+        background: var(--grey);
+      }
+
+      .card-text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.main-program-section {
+  color: #fefef9;
+  padding-top: 20px;
+  background-image: url(../images/background-2.png);
+  background-size: 25px 25px;
+  background-repeat: repeat;
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+
+    .card {
+      margin: 2.5px 0;
+      background: rgba(255, 255, 255, 0.1);
+
+      img {
+        padding-left: 7px;
+        padding-right: 6px;
+        max-width: 60px;
+      }
+
+      .card-title {
+        color: var(--primary);
+        font-weight: 700;
+        padding: 0;
+        text-align: center;
+      }
+
+      .card-text {
+        padding: 10px 10px 10px 0;
+      }
+    }
+
+    .card:hover {
+      outline: 1px solid white;
+    }
+  }
+
+  button {
+    @extend .primary-button;
+  }
+
+  .agenda-link {
+    font-size: 1.5rem;
+  }
+
+  .agenda-link:hover {
+    color: var(--dark);
+  }
+}
+
+.more-button {
+  align-self: stretch;
+  font-size: 0.8rem;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 2px;
+  margin: 20px 0;
+
+  .fa-chevron-down {
+    color: var(--primary);
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .featured-speakers-section {
+    .card-grid {
+      .card {
+        .card-title {
+          font-size: 1.7rem;
+        }
+
+        .card-subtitle {
+          font-size: 1.4rem;
+          padding-bottom: 6px;
+          margin-top: 3px;
+          margin-bottom: 6px;
+        }
+
+        .card-text {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .more-button {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-section {
+    padding-left: 100px;
+
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .intro-box {
+      max-width: 500px;
+      padding: 20px;
+      font-size: 1.7rem;
+      line-height: 2.6rem;
+      font-weight: 500;
+    }
+
+    .dates {
+      font-size: 2.4rem;
+    }
+
+    .location {
+      font-size: 1.9rem;
+      font-weight: 500;
+    }
+  }
+
+  .main-program-section {
+    .card-grid {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      height: max-content;
+
+      .card {
+        margin: 0;
+        padding: 10px 5px 5px 5px;
+        align-items: stretch;
+
+        > * {
+          flex: 0 0 auto;
+        }
+
+        img {
+          width: 75%;
+          height: auto;
+        }
+
+        .card-title {
+          font-size: 1.7rem;
+          margin: 15px 0 5px;
+        }
+
+        .card-text {
+          display: flex;
+          flex-grow: 1;
+          max-width: 100%;
+          padding: 5px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    a {
+      font-size: 1.1rem;
+      color: rgb(240, 240, 240);
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+
+  .featured-speakers-section {
+    .card-grid {
+      .card {
+        display: flex;
+        min-width: 0;
+
+        .card-body {
+          max-width: 230px;
+          padding-left: 5px;
+        }
+
+        .card-title {
+          font-size: 1.65rem;
+        }
+
+        .card-subtitle {
+          font-size: 1.35rem;
+        }
+
+        .card-text {
+          font-size: 1.25rem;
+        }
+
+        img {
+          padding: 0;
+          max-width: 100px;
+        }
+
+        .img-wrapper::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          width: 30px;
+          height: 30px;
+          background: url(../images/checkered-black-and-white.jpg);
+          background-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-section {
+    padding-left: 150px;
+
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+
+  .featured-speakers-section {
+    .card-grid {
+      max-width: 960px;
+
+      .card {
+        .card-body {
+          max-width: 350px;
+          font-size: 1.2em;
+        }
+
+        .card-title {
+          font-size: 1.8rem;
+        }
+
+        .card-subtitle {
+          font-size: 1.5rem;
+        }
+
+        .card-text {
+          font-size: 1.35rem;
+        }
+      }
+    }
+  }
+}
